@@ -1,0 +1,327 @@
+EventId,EventTemplate,Occurrences
+db3f31be,checking bus <*> device <*> <*>,4
+6a05fd50,<info> <*> device <*> state change: <*> -> <*> (reason <*> sys-iface-state: <*>,28
+87f714e9,ERROR:esys:src/tss2-esys/esys_context.c:69:Esys_Initialize() Initialize default tcti. ErrorCode (0x000a000a),1
+a391ede5,<*>:0033 FuEngine device e421b2fc248391f6fe3e55ddbb3c9043be068bd0 [TOSHIBA THNSNK256GVN8] does not define a vendor-id!,1
+790454b8,Fetching metadata https://cdn.fwupd.org/downloads/firmware.xml.gz,1
+7d5ff1b0,bus: <*> device: <*> was not an MTP device,4
+2f7c7c80,<info> <*> manager: NetworkManager state is now <*>,8
+ac16e0ed,power: setting force_power to <*>,2
+77426252,power: state changed: <*>,3
+3599a8b3,Endpoint registered: sender=:1.74 <*>,2
+1757fce9,power: guard '3' for 'fwupd' <*>,2
+e8c40a92,"<info> [1614422728.0540] sup-iface[0x55b7ef2a7b00,wlp1s0]: supports 5 scan SSIDs",1
+de230850,[system] Successfully activated service <*>,21
+11fbecd5,<info> <*> device (wlp1s0): supplicant interface state: <*> -> <*>,4
+9498ca2b,wlp1s0: CTRL-EVENT-REGDOM-CHANGE init=BEACON_HINT type=UNKNOWN,2
+8874fbb6,Started Firmware update daemon.,1
+ed6d1e8b,man-db.service: Succeeded.,1
+a163db63,Finished Daily man-db regeneration.,1
+35d17777,"fwupd-refresh.service: Main process exited, code=exited, status=1/FAILURE",1
+2f8af4a6,fwupd-refresh.service: Failed with result 'exit-code'.,1
+e13185af,Failed to start Refresh fwupd metadata and update motd.,1
+ea1218ec,logrotate.service: Succeeded.,1
+186c606e,Finished Rotate log files.,1
+f0b7d6b0,<*> pcieport 0000:00:1c.0: AER: Corrected error received: 0000:00:1c.0,3305
+a919d150,"<*> pcieport 0000:00:1c.0: AER: PCIe Bus Error: severity=Corrected, type=Data Link Layer, (Transmitter ID)",3297
+578fdfc5,<*> pcieport 0000:00:1c.0: AER: device [8086:9d13] error <*>,3297
+181af6fb,<*> pcieport 0000:00:1c.0: AER: [12] Timeout,3297
+702467a3,message repeated 3 times: [ wlp1s0: CTRL-EVENT-REGDOM-CHANGE init=BEACON_HINT type=UNKNOWN],1
+f5f955f9,<info> Couldn't check support for device <*> not supported by any plugin,2
+736986a1,apt-daily.service: Succeeded.,1
+eaf939ab,Finished Daily apt download activities.,1
+76b18ae2,Starting Daily apt upgrade and clean activities...,1
+cf041830,systemd-rfkill.service: Succeeded.,2
+e670e678,<info> [1614422732.9705] policy: auto-activating connection 'MOVISTAR_6450' (d6c49ea2-aae3-4714-9973-a303b3003b16),1
+f113a34c,<info> [1614422732.9710] device (wlp1s0): Activation: starting connection 'MOVISTAR_6450' (d6c49ea2-aae3-4714-9973-a303b3003b16),1
+fdec5f16,"<info> [1614422732.9721] device (wlp1s0): Activation: (wifi) access point 'MOVISTAR_6450' has security, but secrets are required.",1
+d8b17631,"<info> [1614422732.9725] sup-iface[0x55b7ef2a7b00,wlp1s0]: wps: type pbc start...",1
+c11a9627,"<info> [1614422732.9758] device (wlp1s0): Activation: (wifi) connection 'MOVISTAR_6450' has security, and secrets exist. No new secrets needed.",1
+c89b96ba,<info> [1614422732.9759] Config: added <*> value <*>,5
+f38ae95a,<info> [1614422732.9759] Config: added 'key_mgmt' value 'WPA-PSK WPA-PSK-SHA256 FT-PSK',1
+e024791e,wlp1s0: SME: Trying to authenticate with e2:41:36:c8:64:50 (SSID='MOVISTAR_6450' freq=2462 MHz),1
+d0ebad49,[34683.543681] wlp1s0: authenticate with e2:41:36:c8:64:50,1
+58f7526e,<info> <*> device (p2p-dev-wlp1s0): supplicant management interface state: <*> -> <*>,3
+ad9c20bf,[34683.601182] wlp1s0: send auth to e2:41:36:c8:64:50 (try 1/3),1
+52fc0de2,wlp1s0: Trying to associate with e2:41:36:c8:64:50 (SSID='MOVISTAR_6450' freq=2462 MHz),1
+df9eeac3,[34683.607875] wlp1s0: authenticated,1
+5e1bd1c0,[34683.613217] wlp1s0: associate with e2:41:36:c8:64:50 (try 1/3),1
+f2abbdef,wlp1s0: Associated with e2:41:36:c8:64:50,1
+bc015646,[34683.617754] wlp1s0: RX AssocResp from e2:41:36:c8:64:50 (capab=0x431 status=0 aid=8),1
+31408572,[34683.620154] wlp1s0: associated,1
+9a1fdad9,wlp1s0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0,1
+2604b14f,<info> <*> device (wlp1s0): supplicant interface state: <*> <*> <*> <*>,2
+7d0c5f2a,<info> <*> device (p2p-dev-wlp1s0): supplicant management interface state: <*> <*> <*> <*>,2
+137baa17,wlp1s0: WPA: Key negotiation completed with e2:41:36:c8:64:50 [PTK=CCMP GTK=CCMP],1
+8229a051,wlp1s0: CTRL-EVENT-CONNECTED - Connection to e2:41:36:c8:64:50 completed [id=0 id_str=],1
+09d9bb86,<*> IPv6: ADDRCONF(NETDEV_CHANGE): <*> link becomes ready,2
+45bb54fe,"<info> [1614422733.3000] device (wlp1s0): Activation: (wifi) Stage 2 of 5 (Device Configure) successful. Connected to wireless network ""MOVISTAR_6450""",1
+516fede9,<info> <*> dhcp4 <*> activation: beginning transaction (timeout in 45 seconds),2
+2b8470f5,Joining mDNS multicast group on interface <*> with address <*>,4
+dbc8d0a9,New relevant interface <*> for mDNS.,4
+314acc1e,Registering new address record for <*> on <*>,4
+9256f915,"[system] Activating via systemd: service <*> <*> requested by <*> (uid=1000 <*> <*> <*> label=""unconfined"")",16
+a55b210b,Starting Fingerprint Authentication Daemon...,13
+c98a4b83,wlp1s0: CTRL-EVENT-SIGNAL-CHANGE above=1 <*> noise=-54 txrate=1000,2
+0f7f092a,Started Fingerprint Authentication Daemon.,13
+712d7889,<info> <*> dhcp4 <*> state changed <*> -> <*>,6
+884c908e,<info> <*> dhcp4 <*> option <*> => <*>,46
+a83568df,<info> <*> dhcp4 <*> option domain_name_servers => '<*> <*>',2
+b82820d5,[<*>] Cannot reach: https://daisy.ubuntu.com,1
+7eaa8e60,<info> [1614422733.8040] policy: set 'MOVISTAR_6450' (wlp1s0) as default for IPv4 routing and DNS,1
+5ea59ac5,"<info> <*> device <*> Activation: successful, device activated.",2
+7b9eb55b,"Server returned error NXDOMAIN, mitigating potential DNS violation DVE-2018-0001, retrying transaction with reduced feature level UDP.",93
+d35e6e42,[<*>] The default IPv4 route is: /org/freedesktop/NetworkManager/ActiveConnection/4,1
+1ddd9183,[<*>] Not a paid data plan: /org/freedesktop/NetworkManager/ActiveConnection/4,1
+34e1f32f,[<*>] Found usable connection: /org/freedesktop/NetworkManager/ActiveConnection/4,1
+c93dffab,<*> pcieport 0000:00:1c.0: AER: can't find device of ID00e0,107
+86d1b403,"message repeated <*> times: [ Server returned error NXDOMAIN, mitigating potential DNS violation DVE-2018-0001, retrying transaction with reduced feature level UDP.]",20
+60373bc2,[<*>] online,1
+182310ac,[system] Activating via systemd: service <*> <*> requested by <*> <*> <*> <*> <*> <*> <*>,5
+b3cb10d9,Starting PackageKit Daemon...,1
+0262d0ab,daemon start,1
+c7b73736,Started PackageKit Daemon.,1
+bb26291f,<info> <*> agent-manager: <*> agent registered,9
+3a789173,Window manager warning: Overwriting existing binding of keysym <*> with keysym <*> (keycode <*>,81
+53074297,<*> pcieport 0000:00:1c.0: AER: Multiple Corrected error received: 0000:00:1c.0,99
+1dad2c1c,NetworkManager-dispatcher.service: Succeeded.,2
+bf4c6778,vte-spawn-adcc6fc7-322d-49a8-9afd-d2575c76d1ba.scope: Succeeded.,1
+e1c13281,power: got event for guard '3' (10),1
+fc66cd73,"power: shutdown scheduled (T-20,00s)",1
+cdf27834,refresh-cache transaction <*> from uid 1000 finished with success after <*>,5
+56542215,"<*> audit: type=1400 <*> <*> operation=""open"" <*> <*> <*> <*> requested_mask=""r"" denied_mask=""r"" fsuid=1000 <*>",10
+8a38b86d,xb_builder_node_unlink: assertion 'XB_IS_BUILDER_NODE (self)' failed,1
+d862a31c,"[34701.972679] audit: type=1326 audit(1614422751.416:122): auid=1000 uid=1000 gid=1000 ses=3 subj=snap.snap-store.ubuntu-software pid=1802 comm=""pool-org.gnome."" exe=""/snap/snap-store/518/usr/bin/snap-store"" sig=0 arch=c000003e syscall=93 compat=0 ip=0x7f09f29314e7 code=0x50000",1
+38928145,message repeated 80 times: [ xb_builder_node_unlink: assertion 'XB_IS_BUILDER_NODE (self)' failed],1
+4e0c994d,debug: running <*> on mounted <*>,13
+a82af8d2,debug: /dev/sda1 is a FAT32 partition,1
+69a90753,debug: /dev/sda1 partition <*> is <*>,2
+32b27d84,debug: running subtest <*>,2
+e63c2712,result: Microsoft/Boot/bootmgfw.efi:Windows Boot Manager:Windows,1
+e4575d45,debug: bootloader Microsoft/Boot/bootmgfw.efi:Windows Boot Manager:Windows found by subtest /usr/lib/os-probes/mounted/efi/20microsoft,1
+b42ffade,result: /dev/sda1@/EFI/Microsoft/Boot/bootmgfw.efi:Windows Boot Manager:Windows:efi,1
+259d708d,debug: os detected by /usr/lib/os-probes/mounted/05efi,1
+9afe92a0,debug: /dev/sda3 is fuseblk partition: exiting,1
+6b323812,debug: /dev/sda3 is not <*> <*> partition: exiting,5
+f65c3a0e,debug: Skipping legacy bootloaders on UEFI system,1
+6bccae24,"storehelpers.go:551: cannot refresh: snap has no updates available: ""code"", ""core"", ""core18"", ""core20"", ""discord"", ""docker"", ""gnome-3-28-1804"", ""gnome-3-34-1804"", ""gtk-common-themes"", ""htop"", ""snap-store"", ""snapd"", ""spotify""",8
+1c5a7f0e,"apparmor=""DENIED"" operation=""dbus_method_call"" bus=""session"" path=""/org/gtk/Notifications"" interface=""org.gtk.Notifications"" member=""RemoveNotification"" mask=""send"" name=""org.gtk.Notifications"" pid=1802 label=""snap.snap-store.ubuntu-software"" peer_pid=1558 peer_label=""unconfined""",5
+b88c5070,apt-daily-upgrade.service: Succeeded.,1
+e3efe734,Finished Daily apt upgrade and clean activities.,1
+23594235,fprintd.service: Succeeded.,13
+a97796cf,wlp1s0: WPA: Group rekeying completed with e2:41:36:c8:64:50 [GTK=CCMP],2
+7a2e06e6,Job `cron.daily' started,1
+ef60eaa5,Updated timestamp for job <*> to 2021-02-27,2
+73b0007e,no dictionary update necessary.,1
+41b450c5,Job `cron.daily' terminated,1
+39cfcc12,daemon quit,1
+c2774380,packagekit.service: Succeeded.,1
+5cedc2ba,<*> Skia shader compilation error,2
+781f5987,------------------------,2
+c48c42c9,Errors:,2
+5b1f1a91,Starting Hostname Service...,5
+3a6c3a0e,Started Hostname Service.,5
+e5f06148,Job `cron.weekly' started,1
+8389fc6e,Job `cron.weekly' terminated,1
+d85c41ef,Normal exit <*> jobs run),4
+11dcabae,anacron.service: Killing process 44880 (check-new-relea) with signal SIGKILL.,2
+a62dfff6,anacron.service: Succeeded.,4
+f9ffc490,Starting Notification regarding a new release of Ubuntu...,1
+0259d38b,"[session uid=1000 pid=1323] Activating via systemd: service <*> <*> requested by <*> (uid=1000 <*> <*> "" label=""unconfined"")",155
+5ad591ea,Starting Tracker metadata database store and lookup manager...,65
+0a35021e,[session uid=1000 pid=1323] Successfully activated service <*>,250
+c3d20f15,Started Tracker metadata database store and lookup manager.,65
+fe5407c8,Starting Tracker metadata extractor...,88
+99dee571,Set scheduler policy to SCHED_IDLE,88
+ffe2e390,Setting priority nice level to 19,88
+733ede99,Started Tracker metadata extractor.,88
+70e66c14,tracker-extract.service: Succeeded.,88
+f5951cf6,"/usr/lib/ubuntu-release-upgrader/check-new-release-gtk:30: PyGIWarning: Gtk was imported without specifying a version first. Use gi.require_version('Gtk', '3.0') before import to ensure that the right version gets loaded.",1
+3c55f226,from gi.repository import Gtk,1
+f9b8206b,"WARNING:root:timeout reached, exiting",1
+bb17bfe4,update-notifier-release.service: Succeeded.,1
+83ee6db3,Finished Notification regarding a new release of Ubuntu.,1
+d46c33c4,systemd-hostnamed.service: Succeeded.,5
+e0aa021e,OK,65
+d491179d,tracker-store.service: Succeeded.,65
+f9da88b9,Started VTE child process <*> launched by gnome-terminal-server process <*>,17
+359edf97,vte-spawn-5dd20368-1dc4-4a87-b699-fc716201740d.scope: Succeeded.,1
+b4303b27,Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for <*>,5
+f316407c,"[session uid=1000 pid=1323] Activating service name='org.gnome.gedit' requested by ':1.94' (uid=1000 pid=3007 comm=""/usr/bin/nautilus --gapplication-service "" label=""unconfined"")",86
+361ec799,"[35841.799683] perf: interrupt took too long (5003 > 4985), lowering kernel.perf_event_max_sample_rate to 39750",1
+a46f0aaa,<*> SharedImageManager::ProduceSkia: Trying to Produce a Skia representation from a non-existent mailbox.,11
+c8b6b98e,(root) CMD ( cd / && run-parts --report /etc/cron.hourly),6
+031a8489,Initial synchronization to time server <*>:123 (ntp.ubuntu.com).,1
+92a6ef23,<*> usb <*> <*> SuperSpeed Gen 1 USB device number <*> using xhci_hcd,3
+096e32b2,"<*> usb <*> New USB device found, idVendor=05e3, <*> bcdDevice= 6.54",2
+d6ff29c4,<*> usb <*> New USB device <*> <*> <*> <*>,6
+a4c5b861,<*> usb <*> Product: <*> Hub,2
+c77d1c7c,<*> usb <*> Manufacturer: <*>,4
+002cfa8b,<*> hub <*> USB hub found,2
+27599108,<*> hub <*> 4 ports detected,2
+2f5e69c1,<*> usb <*> <*> <*> USB device number <*> using xhci_hcd,6
+e1e4f948,[36925.342251] usb 2-3.1: Product: USB 10/100/1000 LAN,1
+c217648f,<*> usb <*> SerialNumber: <*>,2
+b6817be1,<*> usbcore: registered new interface driver <*>,2
+3d1d48eb,[36925.568940] r8152 2-3.1:1.0: load rtl8153b-2 v1 10/23/19 successfully,1
+dbb9dcd3,[36925.603433] r8152 2-3.1:1.0 eth0: v1.11.11,1
+68924e1a,<info> [1614424974.4117] manager: (eth0): new Ethernet device (/org/freedesktop/NetworkManager/Devices/8),1
+b343b57d,Using default interface naming scheme 'v245'.,2
+fc525586,"ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.",2
+b79575f7,[36925.741654] r8152 2-3.1:1.0 enx00e04c6acbf8: renamed from eth0,1
+3b142f09,<info> [1614424974.5696] device (eth0): interface index 6 renamed iface from 'eth0' to 'enx00e04c6acbf8',1
+c5d5fe25,<info> [1614424974.5955] settings: (enx00e04c6acbf8): created default wired connection 'Conexión cableada 1',1
+69eb79ba,<info> [1614424977.1753] device (enx00e04c6acbf8): carrier: link connected,1
+51a702f1,<*> r8152 2-3.1:1.0 enx00e04c6acbf8: carrier on,2
+e891d468,<info> [1614424977.1952] policy: auto-activating connection 'Conexión cableada 1' (58dc505a-ce5a-39db-9618-d8ff94e531c3),1
+7621da33,<info> [1614424977.1965] device (enx00e04c6acbf8): Activation: starting connection 'Conexión cableada 1' (58dc505a-ce5a-39db-9618-d8ff94e531c3),1
+cf670cc6,Starting Network Manager Script Dispatcher Service...,2
+16a3ed3f,Started Network Manager Script Dispatcher Service.,1
+3c24e07d,<info> [1614424981.6747] policy: set 'Conexión cableada 1' (enx00e04c6acbf8) as default for IPv4 routing and DNS,1
+e2c03366,[36934.708057] wlp1s0: deauthenticating from e2:41:36:c8:64:50 by local choice (Reason: 3=DEAUTH_LEAVING),1
+cccc45a3,Starting Load/Save RF Kill Switch Status...,2
+9ea3922a,Started Load/Save RF Kill Switch Status.,2
+a74e4940,wlp1s0: CTRL-EVENT-DISCONNECTED bssid=e2:41:36:c8:64:50 reason=3 locally_generated=1,1
+feb9a4f7,Interface <*> no longer relevant for mDNS.,4
+e73ff3a5,Leaving mDNS multicast group on interface <*> with address <*>,4
+6f1feb4f,<info> [1614424983.6122] manager: rfkill: Wi-Fi hardware radio set disabled,1
+cd117b9d,<info> <*> dhcp4 <*> canceled DHCP transaction,2
+f7b5c6ed,Withdrawing address record for <*> on <*>,4
+357a72d2,rfkill: WLAN soft blocked,2
+94a6558c,"<info> [1614424983.6301] audit: op=""radio-control"" arg=""wireless-enabled"" pid=1558 uid=1000 result=""success""",1
+a0555f95,<info> [1614424983.6307] manager: rfkill: Wi-Fi now disabled by radio killswitch,1
+613363bb,nl80211: deinit <*> disabled_11b_rates=0,2
+de174a57,run-parts: failed to stat component /etc/network/if-post-down.d/avahi-daemon: No such file or directory,1
+8f32db5e,"An active wireless connection, in infrastructure mode, involves no access point?",1
+d3c8d35c,javaldx: Could not find a Java Runtime Environment!,52
+95dafe0b,Please ensure that a JVM and the package libreoffice-java-common,52
+6fc16673,is installed.,52
+fdcc3254,If it is already installed then try removing ~/.config/libreoffice/4/user/config/javasettings_Linux_*.xml,52
+99da3f35,Warning: failed to read path from javaldx,52
+8e2fb763,Window manager warning: Invalid WM_TRANSIENT_FOR window <*> specified for <*>,63
+64806584,"Called ""net usershare info"" but it failed: Falló al ejecutar el proceso hijo «net» (No such file or directory)",4
+67f9bc5a,(root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi),6
+d271fdef,Condition check resulted in Run anacron jobs being skipped.,3
+3395a539,autorefresh.go:479: autorefresco: todos los snaps están actualizados,1
+7d5b1c61,[3481:3481:0227/132408.593051:ERROR:x11_drag_context.cc(149)] XConvertSelection failed for source-advertised target 576,1
+1d107b8e,"[session uid=1000 pid=1323] Activating service name='org.gnome.gedit' requested by ':1.522' (uid=1000 pid=48900 comm=""file-roller /home/ramos/Descargas/log_analysis-mas"" label=""unconfined"")",2
+50a8044b,"<*> audit: type=1400 <*> apparmor=""ALLOWED"" <*> profile=""libreoffice-oopslash"" name=""/tmp/OSL_PIPE_1000_SingleOfficeIPC_a176e9dd63f5c7cf8c9b8783418cb1"" <*> comm=""oosplash"" <*> <*> fsuid=1000 ouid=1000",55
+55e127a2,../clutter/clutter/clutter-actor.c:10558: The clutter_actor_set_allocation() function can only be called from within the implementation of the ClutterActor::allocate() virtual function.,5
+ad5a773d,fwupd.service: Succeeded.,1
+e0f11f96,vte-spawn-49972e43-6cb4-404d-9067-51684cf8eca1.scope: Succeeded.,1
+a559536a,vte-spawn-7af09819-000e-4910-80f5-e44ad202ce36.scope: Succeeded.,1
+e080c23b,vte-spawn-19d045cb-20e0-4c3c-9df8-b4222869041c.scope: Succeeded.,1
+36400673,vte-spawn-c5c02595-09c5-4c05-a795-360817135065.scope: Succeeded.,1
+c7c191de,vte-spawn-19906515-d622-4a4a-a08c-53b81ce84c26.scope: Succeeded.,1
+733aa9df,vte-spawn-89f7c72c-de7d-4a7e-82cc-9070a4b2beaf.scope: Succeeded.,1
+fe233290,vte-spawn-e7ed2f69-ed96-4ca2-af8b-4c6401436d57.scope: Succeeded.,1
+134e83ec,gnome-terminal-server.service: Succeeded.,7
+1241613f,"[session uid=1000 pid=1323] Activating via systemd: service <*> <*> requested by <*> (uid=1000 <*> <*> <*> "" label=""unconfined"")",7
+37dd5bdf,Starting GNOME Terminal Server...,7
+2ab09c24,Started GNOME Terminal Server.,7
+6977997a,vte-spawn-ff9078e4-3a17-4f93-a347-f08ef92b7711.scope: Succeeded.,1
+e08063ce,Unable to connect to the Notification Watcher: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such method “RegisterStatusNotifierItem”,2
+4fbf2c6d,vte-spawn-579010b2-630f-42c2-b3ca-7890506c2f97.scope: Succeeded.,1
+65335380,vte-spawn-04bcb567-285e-428f-979f-a2f29df852e7.scope: Succeeded.,1
+c56374aa,Started Run anacron jobs.,4
+8a17f0f2,Anacron 2.3 started on <*>,4
+d3584692,vte-spawn-e059b7e9-51d0-4835-83fa-d7ba1cfc1d00.scope: Succeeded.,1
+88af6792,"<*> handshake failed; returned -1, SSL error code 1, net_error <*>",3
+e154fc00,vte-spawn-13a1f05c-05ab-48a1-ad5b-044411fe5ad1.scope: Succeeded.,1
+3f2add30,gnome-launched-code_code.desktop-38031.scope: Succeeded.,1
+df79d58c,vte-spawn-edc13f44-c4ec-453b-89d7-14ecaefdbf24.scope: Succeeded.,1
+4fe58c5f,Started Application launched by <*>,3
+7218c754,gnome-launched-x-terminal-emulator-57946.scope: Succeeded.,1
+00a17ed1,vte-spawn-f0918b2a-de52-4ecd-932c-8bfc80232a07.scope: Succeeded.,1
+55a74c88,Fontconfig error: Cannot load default config file: No such file: (null),1
+fdae0832,"[53470.028352] ACPI Error: No installed handler for fixed event - PowerButton (2), disabling (20200528/evevent-255)",1
+31210631,vte-spawn-4556afcc-2c19-4dd0-bf64-a787e6d37f9b.scope: Succeeded.,1
+06446f6f,vte-spawn-ef11b959-e965-441f-924f-aa8d2b025e77.scope: Succeeded.,1
+7e21cb19,"Warning: 'sandbox' is not in the list of known options, but still passed to Electron/Chromium.",1
+cfe52e44,Starting Portal service...,1
+c07386a2,Starting Portal service (GTK+/GNOME implementation)...,1
+c7330144,Started Portal service (GTK+/GNOME implementation).,1
+2bcedd17,Started Portal service.,1
+76e1785e,Se está abriendo en una sesión de navegador existente.,1
+077f0411,<info> <*> manager: sleep: <*> requested (sleeping: <*> enabled: yes),2
+6a64cbb9,[<*>] offline,1
+779e1fd2,Error adding children to desktop: desktopGrid is undefined,1
+6e7b5e91,message repeated 4 times: [ Error adding children to desktop: desktopGrid is undefined],1
+2cb377b9,Reached target Sleep.,1
+1ca2e427,Starting Suspend...,1
+c0516796,Suspending system...,1
+8230c876,[57663.352449] PM: suspend entry (deep),1
+9e600fc7,[57663.362758] Filesystems sync: 0.010 seconds,1
+0225ddb2,[57663.481710] Freezing user space processes ... (elapsed 0.006 seconds) done.,1
+e2ddee9d,<*> OOM killer <*>,2
+c2b5882e,[57663.488532] Freezing remaining freezable tasks ... (elapsed 0.001 seconds) done.,1
+f5e77eae,[57663.490377] printk: Suspending console(s) (use no_console_suspend to debug),1
+69dbdd08,[57663.627255] sd 1:0:0:0: [sda] Synchronizing SCSI cache,1
+c4536556,<*> sd 1:0:0:0: [sda] <*> disk,2
+e9c26597,<*> ACPI: EC: <*> <*>,6
+7b9966df,[57663.720078] ACPI: Preparing to enter system sleep state S3,1
+43c40323,[57663.721150] PM: Saving platform NVS memory,1
+2ab90c7a,[57663.721474] Disabling non-boot CPUs ...,1
+a9071f48,<*> IRQ <*> no longer affine to <*>,4
+a8927091,<*> smpboot: CPU <*> is now offline,3
+acd2d940,[57663.740599] ACPI: Low-level resume complete,1
+5df098df,[57663.740686] PM: Restoring platform NVS memory,1
+a281c8ea,[57663.743410] Enabling non-boot CPUs ...,1
+dfc59d30,[57663.743444] x86: Booting SMP configuration:,1
+e13ca8f1,<*> smpboot: Booting Node 0 Processor <*> APIC <*>,3
+bb268e6e,"<*> microcode: sig=0x806e9, pf=0x80, <*>",2
+b7e2f7f3,<*> <*> is up,3
+e70710b7,[57663.749149] ACPI: Waking up from system sleep state S3,1
+6059e76e,[57664.158306] ata2: SATA link up 6.0 Gbps (SStatus 133 SControl 300),1
+aa00eb81,[57664.160013] ata2.00: configured for UDMA/100,1
+c875befb,[57664.160027] ahci 00<*>.0: port does not support device sleep,1
+60dd8a72,[57664.279946] usb 1-6: device firmware changed,1
+12a6e408,<*> acpi <*> Turning OFF,20
+e82289d0,[57665.132452] mei_hdcp 00<*>.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: bound 00<*>.0 (ops i915_hdcp_component_ops [i915]),1
+c4706724,<*> Bluetooth: hci0: using <*> file: <*>,2
+4043b357,"[57665.133096] Bluetooth: hci0: QCA: patch rome 0x302 build 0x3e8, firmware rome 0x302 build 0x111",1
+e0a87b60,[57665.135647] Restarting tasks ...,1
+894af259,"[57665.154432] usb 1-6: USB disconnect, device number 8",1
+c3bdf9e1,[57665.175896] done.,1
+af99adfd,Endpoint unregistered: sender=:1.74 <*>,2
+b37fee6f,Starting Daily apt download activities...,1
+243361d5,Will run job `cron.daily' in 5 min.,1
+5fa1a89f,Starting Online ext4 Metadata Check for All Filesystems...,1
+6cfe88d0,Jobs will be executed sequentially,1
+6fc74aad,Starting Refresh fwupd metadata and update motd...,1
+4ebfb0b4,Starting Message of the Day...,1
+fbf5da3f,Starting Rotate log files...,1
+eaabf0c7,Starting Daily man-db regeneration...,1
+99b69b4d,e2scrub_all.service: Succeeded.,1
+f5647969,Finished Online ext4 Metadata Check for All Filesystems.,1
+f014f0e9,motd-news.service: Succeeded.,1
+90d9c217,Finished Message of the Day.,1
+712a2199,[57665.231306] PM: suspend exit,1
+a72bbe95,<info> [1614505198.4394] device (enx00e04c6acbf8): DHCPv4: trying to acquire a new lease within 90 seconds,1
+2254c94b,System resumed.,1
+ca60d3d5,Stopped target Bluetooth.,2
+a7dea74c,"[system] Activating via systemd: service name='org.freedesktop.fwupd' unit='fwupd.service' requested by ':1.401' (uid=62803 pid=65162 comm=""/usr/bin/fwupdmgr refresh --no-metadata-check "" label=""unconfined"")",1
+cc5e21ad,Starting Firmware update daemon...,1
+a90b4f78,Reached target Bluetooth.,2
+0e42e049,/dev/sda:,1
+7b08f5ca,setting Advanced Power Management level to 0xfe (254),1
+04013d9f,APM_level#011= 254,1
+472fd622,Stopping Make remote CUPS printers available locally...,1
+11abb915,cups-browsed.service: Succeeded.,1
+953eab6e,Stopped Make remote CUPS printers available locally.,1
+29132530,Stopping CUPS Scheduler...,1
+cd0b5573,systemd-suspend.service: Succeeded.,1
+c204025e,Finished Suspend.,1
+a4a70797,Stopped target Sleep.,1
+af12af69,Reached target Suspend.,1
+2aff419a,Stopped target Suspend.,1
+c0be46d4,cups.service: Succeeded.,1
+4309b8cb,Stopped CUPS Scheduler.,2
+4ec126bc,cups.path: Succeeded.,1
+6cb65778,Stopping CUPS Scheduler.,2
+11847e22,Started CUPS Scheduler.,2
+482c1b16,cups.socket: Succeeded.,1
+559faec1,Closed CUPS Scheduler.,1
+5bb5978e,Listening on CUPS Scheduler.,1
+649c1249,Started Make remote CUPS printers available locally.,1
+0996e290,[57665.439833] usb 1-6: Product: EgisTec Touch Fingerprint Sensor,1
