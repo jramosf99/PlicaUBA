@@ -21,8 +21,8 @@ def get_sockets_info():
         status = socket.status
         pid = socket.pid
         sockets.append({
-            'fd': fd, 'family': family, 'type': type, 'laddr':laddr, 'raddr':raddr,'status':status,'pid':pid})
-
+            'fd': fd, 'family': family, 'type': type,
+            'laddr':laddr, 'raddr':raddr,'status':status,'pid':pid})
     return sockets
 
 def construct_dataframe(sockets):
@@ -32,3 +32,4 @@ def construct_dataframe(sockets):
 p = get_sockets_info()
 df1 = construct_dataframe(p)
 df1.to_csv(outputPath, index=None)
+

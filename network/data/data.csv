@@ -1,32 +1,78 @@
 fd,family,type,laddr,raddr,status,pid
 9,2,1,"addr(ip='127.0.0.1', port=49152)",(),LISTEN,6055.0
-31,2,1,"addr(ip='192.168.1.39', port=58492)","addr(ip='162.159.135.234', port=443)",ESTABLISHED,8584.0
-35,2,1,"addr(ip='192.168.1.39', port=59880)","addr(ip='52.114.74.173', port=443)",ESTABLISHED,2438.0
-75,2,1,"addr(ip='192.168.1.39', port=57035)","addr(ip='52.114.75.156', port=443)",ESTABLISHED,2632.0
-64,2,2,"addr(ip='224.0.0.251', port=5353)",(),NONE,3508.0
--1,10,2,"addr(ip='::', port=5353)",(),NONE,
-44,2,1,"addr(ip='192.168.1.39', port=46475)","addr(ip='52.114.74.119', port=443)",ESTABLISHED,2632.0
--1,2,2,"addr(ip='192.168.1.51', port=68)","addr(ip='192.168.1.1', port=67)",NONE,
--1,10,1,"addr(ip='::1', port=631)",(),LISTEN,
-212,2,2,"addr(ip='224.0.0.251', port=5353)",(),NONE,3468.0
--1,2,2,"addr(ip='0.0.0.0', port=5353)",(),NONE,
-10,2,1,"addr(ip='127.0.0.1', port=49152)","addr(ip='127.0.0.1', port=57600)",ESTABLISHED,6055.0
+-1,2,1,"addr(ip='192.168.1.51', port=48308)","addr(ip='216.58.209.78', port=80)",TIME_WAIT,
+-1,2,1,"addr(ip='192.168.1.51', port=38956)","addr(ip='13.79.133.120', port=443)",TIME_WAIT,
+-1,2,1,"addr(ip='192.168.1.51', port=37052)","addr(ip='52.113.194.132', port=443)",TIME_WAIT,
+-1,2,1,"addr(ip='192.168.1.51', port=52630)","addr(ip='91.189.91.38', port=80)",TIME_WAIT,
+36,2,1,"addr(ip='192.168.1.51', port=45470)","addr(ip='162.159.134.233', port=443)",ESTABLISHED,8584.0
+-1,2,1,"addr(ip='192.168.1.51', port=52642)","addr(ip='91.189.91.38', port=80)",TIME_WAIT,
+34,2,1,"addr(ip='192.168.1.51', port=38804)","addr(ip='162.159.135.232', port=443)",ESTABLISHED,8584.0
 -1,2,2,"addr(ip='127.0.0.53', port=53)",(),NONE,
-27,2,1,"addr(ip='192.168.1.39', port=46686)","addr(ip='54.165.18.45', port=443)",ESTABLISHED,28232.0
--1,2,2,"addr(ip='0.0.0.0', port=631)",(),NONE,
+-1,2,1,"addr(ip='192.168.1.51', port=40495)","addr(ip='52.114.77.34', port=443)",FIN_WAIT1,
+-1,10,2,"addr(ip='::', port=5353)",(),NONE,
+27,2,1,"addr(ip='192.168.1.51', port=51872)","addr(ip='74.125.206.188', port=443)",ESTABLISHED,3508.0
+-1,2,1,"addr(ip='192.168.1.51', port=38938)","addr(ip='13.79.133.120', port=443)",TIME_WAIT,
+51,2,1,"addr(ip='192.168.1.51', port=37332)","addr(ip='149.154.167.91', port=80)",ESTABLISHED,7452.0
 -1,2,1,"addr(ip='127.0.0.53', port=53)",(),LISTEN,
-213,2,2,"addr(ip='224.0.0.251', port=5353)",(),NONE,3468.0
--1,2,2,"addr(ip='0.0.0.0', port=38368)",(),NONE,
-17,2,1,"addr(ip='127.0.0.1', port=57600)","addr(ip='127.0.0.1', port=49152)",ESTABLISHED,28232.0
--1,10,2,"addr(ip='::', port=32828)",(),NONE,
-71,10,2,"addr(ip='::', port=59420)",(),NONE,2632.0
-49,2,1,"addr(ip='192.168.1.39', port=33810)","addr(ip='149.154.167.91', port=443)",ESTABLISHED,7452.0
-122,2,2,"addr(ip='224.0.0.251', port=5353)",(),NONE,3508.0
--1,2,1,"addr(ip='192.168.1.39', port=50558)","addr(ip='142.250.184.174', port=443)",TIME_WAIT,
+-1,2,1,"addr(ip='192.168.1.51', port=52926)","addr(ip='52.114.74.169', port=443)",FIN_WAIT1,
+-1,2,1,"addr(ip='192.168.1.51', port=47090)","addr(ip='142.250.184.10', port=443)",TIME_WAIT,
 -1,2,1,"addr(ip='127.0.0.1', port=631)",(),LISTEN,
-84,2,1,"addr(ip='127.0.0.1', port=6463)",(),LISTEN,8621.0
--1,2,1,"addr(ip='192.168.1.39', port=50556)","addr(ip='142.250.184.174', port=443)",TIME_WAIT,
-22,2,1,"addr(ip='192.168.1.39', port=50972)","addr(ip='173.194.76.188', port=5228)",ESTABLISHED,3508.0
--1,2,2,"addr(ip='192.168.1.39', port=68)","addr(ip='192.168.1.1', port=67)",NONE,
+17,2,1,"addr(ip='127.0.0.1', port=57600)","addr(ip='127.0.0.1', port=49152)",ESTABLISHED,28232.0
+-1,2,1,"addr(ip='192.168.1.51', port=47106)","addr(ip='142.250.184.10', port=443)",TIME_WAIT,
+251,2,2,"addr(ip='224.0.0.251', port=5353)",(),NONE,3468.0
+28,2,1,"addr(ip='192.168.1.51', port=59064)","addr(ip='8.43.85.29', port=443)",ESTABLISHED,2242.0
+17,2,1,"addr(ip='192.168.1.51', port=60858)","addr(ip='151.101.134.49', port=443)",ESTABLISHED,2242.0
+-1,2,1,"addr(ip='192.168.1.51', port=37318)","addr(ip='149.154.167.91', port=80)",TIME_WAIT,
+-1,2,1,"addr(ip='192.168.1.51', port=48252)","addr(ip='216.58.209.78', port=80)",TIME_WAIT,
+26,2,1,"addr(ip='192.168.1.51', port=59892)","addr(ip='20.190.160.3', port=443)",ESTABLISHED,2438.0
+-1,2,1,"addr(ip='192.168.1.51', port=57833)","addr(ip='52.114.75.156', port=443)",FIN_WAIT1,
+25,2,1,"addr(ip='192.168.1.51', port=38358)","addr(ip='168.62.58.130', port=443)",ESTABLISHED,2438.0
+-1,10,1,"addr(ip='::1', port=631)",(),LISTEN,
+-1,2,1,"addr(ip='192.168.1.51', port=47070)","addr(ip='142.250.184.10', port=443)",TIME_WAIT,
+71,10,2,"addr(ip='::', port=59420)",(),NONE,2632.0
+-1,2,1,"addr(ip='192.168.1.51', port=51728)","addr(ip='91.189.88.142', port=80)",TIME_WAIT,
+-1,2,1,"addr(ip='192.168.1.51', port=56048)","addr(ip='66.102.1.188', port=5228)",FIN_WAIT1,
+66,2,1,"addr(ip='192.168.1.51', port=55309)","addr(ip='52.114.75.156', port=443)",ESTABLISHED,2632.0
+-1,2,1,"addr(ip='192.168.1.51', port=52662)","addr(ip='91.189.91.38', port=80)",TIME_WAIT,
+-1,2,1,"addr(ip='192.168.1.51', port=38920)","addr(ip='13.79.133.120', port=443)",TIME_WAIT,
+-1,2,1,"addr(ip='192.168.1.51', port=37312)","addr(ip='149.154.167.91', port=80)",TIME_WAIT,
+31,2,1,"addr(ip='192.168.1.51', port=35792)","addr(ip='162.159.138.234', port=443)",ESTABLISHED,8584.0
+-1,2,1,"addr(ip='192.168.1.51', port=47046)","addr(ip='142.250.184.10', port=443)",TIME_WAIT,
+32,2,1,"addr(ip='192.168.1.51', port=56548)","addr(ip='52.114.74.172', port=443)",ESTABLISHED,2438.0
+19,2,1,"addr(ip='192.168.1.51', port=60860)","addr(ip='151.101.134.49', port=443)",ESTABLISHED,2242.0
+-1,2,1,"addr(ip='192.168.1.51', port=52676)","addr(ip='91.189.91.38', port=80)",TIME_WAIT,
+-1,2,1,"addr(ip='192.168.1.51', port=47112)","addr(ip='142.250.184.10', port=443)",TIME_WAIT,
+-1,2,1,"addr(ip='192.168.1.51', port=52544)","addr(ip='91.189.91.38', port=80)",TIME_WAIT,
+122,2,2,"addr(ip='224.0.0.251', port=5353)",(),NONE,3508.0
+-1,2,1,"addr(ip='192.168.1.51', port=51706)","addr(ip='91.189.88.142', port=80)",TIME_WAIT,
+-1,2,1,"addr(ip='192.168.1.51', port=36918)","addr(ip='52.113.194.132', port=443)",FIN_WAIT1,
+32,2,1,"addr(ip='192.168.1.51', port=35168)","addr(ip='162.159.136.232', port=443)",ESTABLISHED,8584.0
+-1,10,2,"addr(ip='::', port=32828)",(),NONE,
+-1,2,2,"addr(ip='0.0.0.0', port=631)",(),NONE,
+-1,2,1,"addr(ip='192.168.1.51', port=47080)","addr(ip='142.250.184.10', port=443)",TIME_WAIT,
+22,2,1,"addr(ip='192.168.1.39', port=57050)","addr(ip='149.154.167.91', port=443)",ESTABLISHED,7452.0
+25,2,1,"addr(ip='192.168.1.51', port=51552)","addr(ip='162.159.135.234', port=443)",ESTABLISHED,8584.0
+-1,2,1,"addr(ip='192.168.1.51', port=51686)","addr(ip='91.189.88.142', port=80)",TIME_WAIT,
+-1,2,1,"addr(ip='192.168.1.51', port=48170)","addr(ip='216.58.209.78', port=80)",TIME_WAIT,
 38,10,2,"addr(ip='::', port=41307)",(),NONE,2632.0
-51,2,1,"addr(ip='192.168.1.39', port=36572)","addr(ip='149.154.167.91', port=443)",ESTABLISHED,7452.0
+10,2,1,"addr(ip='127.0.0.1', port=49152)","addr(ip='127.0.0.1', port=57600)",ESTABLISHED,6055.0
+-1,2,1,"addr(ip='192.168.1.51', port=38970)","addr(ip='13.79.133.120', port=443)",TIME_WAIT,
+69,2,1,"addr(ip='192.168.1.51', port=39293)","addr(ip='52.114.159.112', port=443)",ESTABLISHED,2632.0
+-1,2,1,"addr(ip='192.168.1.51', port=38850)","addr(ip='13.79.133.120', port=443)",TIME_WAIT,
+-1,2,1,"addr(ip='192.168.1.51', port=52676)","addr(ip='142.250.184.13', port=443)",TIME_WAIT,
+29,2,1,"addr(ip='192.168.1.51', port=37070)","addr(ip='52.113.194.132', port=443)",ESTABLISHED,2438.0
+64,2,2,"addr(ip='224.0.0.251', port=5353)",(),NONE,3508.0
+84,2,1,"addr(ip='127.0.0.1', port=6463)",(),LISTEN,8621.0
+-1,2,1,"addr(ip='192.168.1.51', port=48294)","addr(ip='216.58.209.78', port=80)",TIME_WAIT,
+-1,2,2,"addr(ip='192.168.1.51', port=68)","addr(ip='192.168.1.1', port=67)",NONE,
+-1,2,1,"addr(ip='192.168.1.51', port=51742)","addr(ip='91.189.88.142', port=80)",TIME_WAIT,
+23,2,1,"addr(ip='192.168.1.51', port=37336)","addr(ip='149.154.167.91', port=80)",ESTABLISHED,7452.0
+-1,2,1,"addr(ip='192.168.1.51', port=54772)","addr(ip='52.113.205.4', port=443)",FIN_WAIT1,
+-1,2,1,"addr(ip='192.168.1.51', port=55366)","addr(ip='91.189.88.152', port=80)",TIME_WAIT,
+-1,2,1,"addr(ip='192.168.1.51', port=48270)","addr(ip='216.58.209.78', port=80)",TIME_WAIT,
+-1,2,1,"addr(ip='192.168.1.51', port=47060)","addr(ip='142.250.184.10', port=443)",TIME_WAIT,
+-1,2,1,"addr(ip='192.168.1.51', port=33932)","addr(ip='216.58.209.74', port=443)",TIME_WAIT,
+-1,2,1,"addr(ip='192.168.1.51', port=47100)","addr(ip='142.250.184.10', port=443)",TIME_WAIT,
+-1,2,2,"addr(ip='0.0.0.0', port=5353)",(),NONE,
+-1,2,2,"addr(ip='0.0.0.0', port=38368)",(),NONE,
+32,2,1,"addr(ip='192.168.1.51', port=59066)","addr(ip='8.43.85.29', port=443)",ESTABLISHED,2242.0

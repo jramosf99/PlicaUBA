@@ -3,9 +3,13 @@ from datetime import datetime
 import pandas as pd
 import time
 import os
+import warnings
+warnings.filterwarnings("ignore")#para evitar warning de pandas que no influye
 
 outputPath = "/home/ramos/Escritorio/TFG/process/data/data.csv" #path of the CSV output file
-outputPath2 = "/home/ramos/Escritorio/TFG/process/data/data1.csv" #path of the CSV output file
+outputPath1 = "/home/ramos/Escritorio/TFG/process/data/data1.csv" #path of the CSV output file
+
+outputPath2 = "/home/ramos/Escritorio/TFG/process/data/data2.csv" #path of the CSV output file
 
 def get_users_info():
     # the list the contain all process dictionaries
@@ -65,19 +69,34 @@ def get_processes_info():
                 username = "N/A"
             
         processes.append({
-            'pid': pid, 'name': name, 'create_time': create_time,
-            'cores': cores, 'cpu_usage': cpu_usage, 'status': status, 'nice': nice,
-            'memory_usage': memory_usage, 'n_threads': n_threads, 'username': username,
+            'pid': pid, 'name': str(name), 'create_time': create_time,
+            'cores': int(cores), 'cpu_usage': float(cpu_usage), 'status': str(status), 'nice': int(nice),
+            'memory_usage': float(memory_usage), 'n_threads': int(n_threads), 'username': str(username),
         })
-
-    return processes
-
-def construct_dataframe(processes):
     df = pd.DataFrame(processes)
     df['create_time'] = df['create_time'].apply(datetime.strftime, args=("%Y-%m-%d %H:%M:%S",))
     return df
 
-p = get_processes_info()
-df1 = construct_dataframe(p)
-df1.to_csv(outputPath, index=None)
-get_users_info()
+
+
+procesos_viejos = get_processes_info()
+while True:
+    time.sleep(1)
+    procesos = get_processes_info()
+    n_terminados = set(procesos_viejos['pid']) - set(procesos['pid'])
+    if len(n_terminados)>0:
+        procesos_terminados = procesos_viejos[procesos_viejos.pid.isin(n_terminados)]
+        procesos_terminados = procesos_terminados.assign(FinishTime=datetime.now())
+        if not os.path.isfile(outputPath):
+            procesos_terminados.to_csv(outputPath, index=None, header=True)
+        else:
+            procesos_terminados.to_csv(outputPath, index=None, mode='a', header=False)
+    #este bucle se encarga de por cada iteración quedarse con el valor máximo de cpu y memoria
+    for i in procesos.index: 
+        procces_viejo = procesos_viejos[(procesos_viejos['pid']== procesos["pid"][i])]
+        if len(procces_viejo)>0:
+            cpu_max = max(float(procces_viejo['cpu_usage']), procesos["cpu_usage"][i])
+            memory_max = max(float(procces_viejo['memory_usage']), procesos["memory_usage"][i])
+            procesos["cpu_usage"][i]= cpu_max
+            procesos["memory_usage"][i]= memory_max
+    procesos_viejos=procesos
