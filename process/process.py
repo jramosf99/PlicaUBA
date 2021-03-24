@@ -7,20 +7,8 @@ import warnings
 warnings.filterwarnings("ignore")#para evitar warning de pandas que no influye
 
 outputPath = "/home/ramos/Escritorio/TFG/process/data/data.csv" #path of the CSV output file
-outputPath1 = "/home/ramos/Escritorio/TFG/process/data/data1.csv" #path of the CSV output file
 
-outputPath2 = "/home/ramos/Escritorio/TFG/process/data/data2.csv" #path of the CSV output file
 
-def get_users_info():
-    # the list the contain all process dictionaries
-    users = []
-    for user in psutil.users():
-        name = user.name
-        time = datetime.fromtimestamp(user.started).strftime("%Y-%m-%d %H:%M:%S")
-        users.append({'name': name, 'time': time,})
-    df = pd.DataFrame(users)
-    df.to_csv(outputPath2, index=None)
-    
 
 def get_processes_info():
     # the list the contain all process dictionaries

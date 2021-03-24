@@ -1,0 +1,4 @@
+name,time,terminal,host,pid,close
+ramos,2021-03-23 12:22:40,:0,localhost,1751,active
+pepe,2021-03-23 12:35:28,pts/1,,7671,active
+pepe,2021-03-24 16:55:44,:1,:1,69750,2021-03-24 16:56:22.831924

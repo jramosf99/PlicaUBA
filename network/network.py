@@ -7,8 +7,6 @@ import os
 outputPath = "/home/ramos/Escritorio/TFG/network/data/data.csv" #path of the CSV output file
 
 
-    
-
 def get_sockets_info():
     # the list the contain all process dictionaries
     sockets = []
