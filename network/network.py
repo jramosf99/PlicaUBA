@@ -4,30 +4,32 @@ import pandas as pd
 import time
 import os
 
-outputPath = "/home/ramos/Escritorio/TFG/network/data/data.csv" #path of the CSV output file
+outputPath = "/home/ramos/Escritorio/TFG/network/data/data1.csv" #path of the CSV output file
 
 
-def get_sockets_info():
-    # the list the contain all process dictionaries
-    sockets = []
-    for socket in psutil.net_connections(kind='inet'):
-        fd = socket.fd
-        family = socket.family
-        type = socket.type
-        laddr = socket.laddr
-        raddr = socket.raddr
-        status = socket.status
-        pid = socket.pid
-        sockets.append({
-            'fd': fd, 'family': family, 'type': type,
-            'laddr':laddr, 'raddr':raddr,'status':status,'pid':pid})
-    return sockets
+def get_interfaces_info():
+    interfaces = []
+    net_io = psutil.net_io_counters(pernic=True, nowrap=True)
+    interfaces_names = list(net_io.keys())
+    for name in interfaces_names:
+        interface = net_io[name]
+        bytes_sent=interface.bytes_sent
+        bytes_recv = interface.bytes_recv
+        packets_sent= interface.packets_sent
+        packets_recv= interface.packets_recv
+        errin= interface.errin
+        errout= interface.errout
+        dropin= interface.dropin
+        dropout= interface.dropout
+        interfaces.append({
+            'name': name, 'bytes_sent': bytes_sent, 'bytes_recv': bytes_recv, 'packets_sent':packets_sent, 'packets_recv':packets_recv, 
+            'errin': errin,'errout': errout,'dropout': dropout})
+    return interfaces
 
-def construct_dataframe(sockets):
-    df = pd.DataFrame(sockets)
-    return df
 
-p = get_sockets_info()
-df1 = construct_dataframe(p)
-df1.to_csv(outputPath, index=None)
+psutil.net_io_counters.cache_clear()
 
+while True:
+    interfaces = pd.DataFrame(get_interfaces_info())
+    interfaces.to_csv(outputPath, index=None)
+    time.sleep(10)

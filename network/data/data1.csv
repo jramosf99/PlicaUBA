@@ -1,0 +1,4 @@
+name,bytes_sent,bytes_recv,packets_sent,packets_recv,errin,errout,dropout
+lo,112242,112242,1132,1132,0,0,0
+wlp1s0,944325,6262192,3834,6451,0,0,0
+docker0,0,0,0,0,0,0,0
