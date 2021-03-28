@@ -20,7 +20,6 @@ def _main():
     i = inotify.adapters.Inotify()
     i.add_watch('/home/ramos/Escritorio/tocar/activitywatch-master')
     for event in i.event_gen(yield_nones=False):
-        print(event)
         (_, type_names, path, filename) = event    
         if any(elem in list  for elem in type_names):
             fileEvent = [path, filename, type_names]

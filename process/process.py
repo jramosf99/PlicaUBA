@@ -66,7 +66,6 @@ def get_processes_info():
     return df
 
 
-
 procesos_viejos = get_processes_info()
 while True:
     time.sleep(1)
