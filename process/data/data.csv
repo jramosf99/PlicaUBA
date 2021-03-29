@@ -1,5 +1,0 @@
-pid,name,create_time,cores,cpu_usage,status,nice,memory_usage,n_threads,childrens,username,FinishTime
-50676,chrome,2021-03-29 12:24:25,4,0.0,sleeping,0,21876736.0,14,[],ramos,2021-03-29 12:24:58.758867
-50757,nano,2021-03-29 12:25:00,4,0.0,sleeping,0,1277952.0,1,[],ramos,2021-03-29 12:25:09.284865
-50739,gnome-terminal-server,2021-03-29 12:24:54,4,0.8,sleeping,0,16125952.0,6,[50749],ramos,2021-03-29 12:25:12.836051
-50749,bash,2021-03-29 12:24:55,4,0.0,sleeping,0,1970176.0,1,[50757],ramos,2021-03-29 12:25:12.836051
