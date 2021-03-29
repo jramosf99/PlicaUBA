@@ -3,6 +3,7 @@ from datetime import datetime
 import pandas as pd
 import time
 import os
+import numpy as np 
 import warnings
 warnings.filterwarnings("ignore")#para evitar warning de pandas que no influye
 
@@ -55,13 +56,17 @@ def get_processes_info():
                 username = process.username()
             except psutil.AccessDenied:
                 username = "N/A"
+            childrens1 = process.children()
+            childrens= []
+            for child in childrens1:
+                childrens.append(int(child.pid))
             
         processes.append({
-            'pid': pid, 'name': str(name), 'create_time': create_time,
+            'pid': int(pid), 'name': str(name), 'create_time': create_time,
             'cores': int(cores), 'cpu_usage': float(cpu_usage), 'status': str(status), 'nice': int(nice),
-            'memory_usage': float(memory_usage), 'n_threads': int(n_threads), 'username': str(username),
+            'memory_usage': float(memory_usage), 'n_threads': int(n_threads),'childrens':childrens, 'username': str(username),
         })
-    df = pd.DataFrame(processes)
+    df = pd.DataFrame(processes, index=None)
     df['create_time'] = df['create_time'].apply(datetime.strftime, args=("%Y-%m-%d %H:%M:%S",))
     return df
 
@@ -80,10 +85,14 @@ while True:
             procesos_terminados.to_csv(outputPath, index=None, mode='a', header=False)
     #este bucle se encarga de por cada iteración quedarse con el valor máximo de cpu y memoria
     for i in procesos.index: 
-        procces_viejo = procesos_viejos[(procesos_viejos['pid']== procesos["pid"][i])]
+        procces_viejo = procesos_viejos[(procesos_viejos['pid'] == procesos["pid"][i])]
         if len(procces_viejo)>0:
             cpu_max = max(float(procces_viejo['cpu_usage']), procesos["cpu_usage"][i])
             memory_max = max(float(procces_viejo['memory_usage']), procesos["memory_usage"][i])
             procesos["cpu_usage"][i]= cpu_max
             procesos["memory_usage"][i]= memory_max
+            hijos=set(procces_viejo['childrens'].values[0])- set(procesos["childrens"][i])
+            if len(hijos)>0:
+                for h in hijos:
+                    procesos["childrens"][i].append(h)
     procesos_viejos=procesos
