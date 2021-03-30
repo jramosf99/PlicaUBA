@@ -16,7 +16,7 @@ def getActualusers():
         terminal = user.terminal
         host = user.host
         pid = user.pid
-        actualusers.append({'name': str(name), 'time': str(time), 'terminal': str(terminal), 'host': str(host), 'pid': int(pid), 'close': "active"})
+        actualusers.append({'name': str(name), 'time': str(time), 'terminal': str(terminal), 'host': str(host), 'pid': pid, 'close': "active"})
     return actualusers
 
 def users(path):
