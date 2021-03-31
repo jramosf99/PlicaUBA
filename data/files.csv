@@ -1,2 +1,2 @@
-path,file_name,actions
-/home/ramos/Escritorio/tocar/activitywatch-master,qegr,"['IN_MOVED_FROM', 'IN_ISDIR']"
+path,actions,time
+/home/ramos/Escritorio/tocar/activitywatch-master/eferg,"['IN_CREATE', 'IN_ISDIR']",2021-03-31 14:38:34.681108
