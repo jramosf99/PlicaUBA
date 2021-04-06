@@ -1,0 +1,452 @@
+EventId,EventTemplate,Occurrences
+ea1218ec,logrotate.service: Succeeded.,1
+186c606e,Finished Rotate log files.,1
+bd83dad6,Endpoint registered: sender=:1.70 <*>,2
+ed6d1e8b,man-db.service: Succeeded.,1
+a163db63,Finished Daily man-db regeneration.,1
+de230850,[system] Successfully activated service <*>,29
+8874fbb6,Started Firmware update daemon.,1
+790454b8,Fetching metadata https://cdn.fwupd.org/downloads/firmware.xml.gz,1
+35d17777,"fwupd-refresh.service: Main process exited, code=exited, status=1/FAILURE",1
+2f8af4a6,fwupd-refresh.service: Failed with result 'exit-code'.,1
+e13185af,Failed to start Refresh fwupd metadata and update motd.,1
+f0b7d6b0,<*> pcieport 0000:00:1c.0: AER: Corrected error received: 0000:00:1c.0,1935
+a919d150,"<*> pcieport 0000:00:1c.0: AER: PCIe Bus Error: severity=Corrected, type=Data Link Layer, (Transmitter ID)",1909
+578fdfc5,<*> pcieport 0000:00:1c.0: AER: device [8086:9d13] error <*>,1909
+181af6fb,<*> pcieport 0000:00:1c.0: AER: [12] Timeout,1909
+9498ca2b,wlp1s0: CTRL-EVENT-REGDOM-CHANGE init=BEACON_HINT type=UNKNOWN,1
+53074297,<*> pcieport 0000:00:1c.0: AER: Multiple Corrected error received: 0000:00:1c.0,68
+c93dffab,<*> pcieport 0000:00:1c.0: AER: can't find device of ID00e0,94
+2d7e932e,message repeated 4 times: [ wlp1s0: CTRL-EVENT-REGDOM-CHANGE init=BEACON_HINT type=UNKNOWN],1
+f5f955f9,<info> Couldn't check support for device <*> not supported by any plugin,2
+1dad2c1c,NetworkManager-dispatcher.service: Succeeded.,7
+736986a1,apt-daily.service: Succeeded.,2
+eaf939ab,Finished Daily apt download activities.,2
+76b18ae2,Starting Daily apt upgrade and clean activities...,1
+cf041830,systemd-rfkill.service: Succeeded.,1
+bb26291f,<info> <*> agent-manager: <*> agent registered,6
+de3cd471,<info> [1617698456.9597] policy: auto-activating connection 'MOVISTAR_6450' (d6c49ea2-aae3-4714-9973-a303b3003b16),1
+88297d86,<info> [1617698456.9601] device (wlp1s0): Activation: starting connection 'MOVISTAR_6450' (d6c49ea2-aae3-4714-9973-a303b3003b16),1
+6a05fd50,<info> <*> device <*> state change: <*> -> <*> (reason <*> sys-iface-state: <*>,17
+2f7c7c80,<info> <*> manager: NetworkManager state is now <*>,8
+529ab1e6,"<info> [1617698456.9610] device (wlp1s0): Activation: (wifi) access point 'MOVISTAR_6450' has security, but secrets are required.",1
+05e4c819,"<info> [1617698456.9612] sup-iface[0x55c28fe803f0,wlp1s0]: wps: type pbc start...",1
+48e1890d,"<info> [1617698456.9645] device (wlp1s0): Activation: (wifi) connection 'MOVISTAR_6450' has security, and secrets exist. No new secrets needed.",1
+e2774757,<info> <*> Config: added <*> value <*>,5
+3a844c82,<info> [1617698456.9646] Config: added 'key_mgmt' value 'WPA-PSK WPA-PSK-SHA256 FT-PSK',1
+0cf6045d,[80704.907279] wlp1s0: authenticate with e2:41:36:c8:64:50,1
+e024791e,wlp1s0: SME: Trying to authenticate with e2:41:36:c8:64:50 (SSID='MOVISTAR_6450' freq=2462 MHz),1
+11fbecd5,<info> <*> device (wlp1s0): supplicant interface state: <*> -> <*>,3
+58f7526e,<info> <*> device (p2p-dev-wlp1s0): supplicant management interface state: <*> -> <*>,3
+489a8ab8,[80704.964434] wlp1s0: send auth to e2:41:36:c8:64:50 (try 1/3),1
+52fc0de2,wlp1s0: Trying to associate with e2:41:36:c8:64:50 (SSID='MOVISTAR_6450' freq=2462 MHz),1
+e0870c1e,[80704.970856] wlp1s0: authenticated,1
+683dc816,[80704.973910] wlp1s0: associate with e2:41:36:c8:64:50 (try 1/3),1
+f2abbdef,wlp1s0: Associated with e2:41:36:c8:64:50,1
+9a1fdad9,wlp1s0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0,1
+29a73e74,[80704.977882] wlp1s0: RX AssocResp from e2:41:36:c8:64:50 (capab=0x431 status=0 aid=1),1
+61c5b439,[80704.980348] wlp1s0: associated,1
+2604b14f,<info> <*> device (wlp1s0): supplicant interface state: <*> <*> <*> <*>,2
+7d0c5f2a,<info> <*> device (p2p-dev-wlp1s0): supplicant management interface state: <*> <*> <*> <*>,2
+137baa17,wlp1s0: WPA: Key negotiation completed with e2:41:36:c8:64:50 [PTK=CCMP GTK=CCMP],1
+8229a051,wlp1s0: CTRL-EVENT-CONNECTED - Connection to e2:41:36:c8:64:50 completed [id=0 id_str=],1
+09d9bb86,<*> IPv6: ADDRCONF(NETDEV_CHANGE): <*> link becomes ready,2
+c1161433,"<info> [1617698457.3048] device (wlp1s0): Activation: (wifi) Stage 2 of 5 (Device Configure) successful. Connected to wireless network ""MOVISTAR_6450""",1
+516fede9,<info> <*> dhcp4 <*> activation: beginning transaction (timeout in 45 seconds),2
+2b8470f5,Joining mDNS multicast group on interface <*> with address <*>,4
+dbc8d0a9,New relevant interface <*> for mDNS.,4
+314acc1e,Registering new address record for <*> on <*>,4
+884c908e,<info> <*> dhcp4 <*> option <*> => <*>,92
+a83568df,<info> <*> dhcp4 <*> option domain_name_servers => '<*> <*>',4
+712d7889,<info> <*> dhcp4 <*> state changed <*> -> <*>,5
+182310ac,[system] Activating via systemd: service <*> <*> requested by <*> <*> <*> <*> <*> <*> <*>,14
+b82820d5,[<*>] Cannot reach: https://daisy.ubuntu.com,1
+cf670cc6,Starting Network Manager Script Dispatcher Service...,6
+c8979af6,not handling error download-failed for action refresh: failed to download https://cdn.fwupd.org/downloads/firmware.xml.gz.asc: Cannot resolve hostname,2
+b3cb10d9,Starting PackageKit Daemon...,1
+16a3ed3f,Started Network Manager Script Dispatcher Service.,6
+0262d0ab,daemon start,1
+4f836fb9,<info> <*> policy: set 'MOVISTAR_6450' (wlp1s0) as default for IPv4 routing and DNS,3
+5ea59ac5,"<info> <*> device <*> Activation: successful, device activated.",2
+54105194,wlp1s0: CTRL-EVENT-SIGNAL-CHANGE above=1 <*> noise=-109 txrate=1000,2
+7b9eb55b,"Server returned error NXDOMAIN, mitigating potential DNS violation DVE-2018-0001, retrying transaction with reduced feature level UDP.",216
+c7b73736,Started PackageKit Daemon.,1
+9c13de74,[<*>] The default IPv4 route is: /org/freedesktop/NetworkManager/ActiveConnection/7,3
+6a384747,[<*>] Not a paid data plan: /org/freedesktop/NetworkManager/ActiveConnection/7,3
+00456875,[<*>] Found usable connection: /org/freedesktop/NetworkManager/ActiveConnection/7,3
+3a789173,Window manager warning: Overwriting existing binding of keysym <*> with keysym <*> (keycode <*>,72
+86d1b403,"message repeated <*> times: [ Server returned error NXDOMAIN, mitigating potential DNS violation DVE-2018-0001, retrying transaction with reduced feature level UDP.]",43
+b88c5070,apt-daily-upgrade.service: Succeeded.,1
+e3efe734,Finished Daily apt upgrade and clean activities.,1
+60373bc2,[<*>] online,3
+802022e9,<*> kauditd_printk_skb: <*> callbacks suppressed,5564
+f9e213f7,"<*> audit: type=1400 <*> apparmor=""DENIED"" operation=""ptrace"" profile=""snap.discord.discord"" pid=3651 comm=""Discord"" requested_mask=""read"" denied_mask=""read"" <*>",46294
+65e02853,"<*> audit: type=1400 <*> <*> operation=""open"" <*> <*> <*> <*> requested_mask=""r"" denied_mask=""r"" fsuid=1000 ouid=0",9409
+cdf27834,refresh-cache transaction <*> from uid 1000 finished with success after <*>,7
+8a38b86d,xb_builder_node_unlink: assertion 'XB_IS_BUILDER_NODE (self)' failed,1
+38928145,message repeated 80 times: [ xb_builder_node_unlink: assertion 'XB_IS_BUILDER_NODE (self)' failed],1
+5b1f1a91,Starting Hostname Service...,16
+3a6c3a0e,Started Hostname Service.,16
+55e127a2,../clutter/clutter/clutter-actor.c:10558: The clutter_actor_set_allocation() function can only be called from within the implementation of the ClutterActor::allocate() virtual function.,10
+07063570,power: got event for guard '5' (10),1
+f8bf3624,power: guard '5' for 'fwupd' deactivated,1
+fc66cd73,"power: shutdown scheduled (T-20,00s)",1
+77426252,power: state changed: <*>,2
+23594235,fprintd.service: Succeeded.,6
+26b1e83a,"storehelpers.go:551: cannot refresh: snap has no updates available: ""code"", ""core"", ""core18"", ""core20"", ""discord"", ""docker"", ""gnome-3-28-1804"", ""gnome-3-34-1804"", ""gtk-common-themes"", ""htop"", ""skype"", ""snap-store"", ""snapd"", ""spotify"", ""zoom-client""",8
+84680aba,"apparmor=""DENIED"" operation=""dbus_method_call"" bus=""session"" <*> <*> <*> mask=""send"" <*> <*> <*> <*> peer_label=""unconfined""",15
+8e5c6a9f,clutter_input_device_ungrab: assertion 'CLUTTER_IS_INPUT_DEVICE (device)' failed,1
+3704c1fc,/var/lib/apt/lists/lock:,1
+4fe58c5f,Started Application launched by <*>,17
+446b2f85,1617698488382#011addons.xpi#011WARN#011Not converting unknown addon type undefined,1
+8e5c0f8e,1617698489036#011addons.xpi#011WARN#011Can't get modified time of /usr/lib/thunderbird/features/wetransfer@extensions.thunderbird.net,1
+6c105a29,power: setting force_power to OFF,1
+d46c33c4,systemd-hostnamed.service: Succeeded.,16
+7d19605d,"JavaScript error: resource:///modules/activity/autosync.jsm, line 251: uncaught exception: 2147746065",3
+0df2b5e5,[session uid=1000 pid=1696] Activating service <*> requested by <*> (uid=1000 <*> <*> <*> <*> <*>,24
+94a5dd0c,[session uid=1000 pid=1696] Successfully activated service <*>,76
+7a2e06e6,Job `cron.daily' started,1
+f75f6904,Updated timestamp for job `cron.daily' to 2021-04-06,1
+73b0007e,no dictionary update necessary.,1
+41b450c5,Job `cron.daily' terminated,1
+9b77ca58,Normal exit <*> <*> run),9
+a62dfff6,anacron.service: Succeeded.,9
+6a64cbb9,[<*>] offline,2
+39cfcc12,daemon quit,1
+c2774380,packagekit.service: Succeeded.,1
+a97796cf,wlp1s0: WPA: Group rekeying completed with e2:41:36:c8:64:50 [GTK=CCMP],16
+219ffb81,"[system] Activating via systemd: service <*> <*> requested by <*> (uid=1000 <*> <*> "" label=""unconfined"")",14
+c5899cae,"[session uid=1000 pid=1696] Activating via systemd: service <*> <*> requested by <*> (uid=1000 <*> <*> "" label=""unconfined"")",30
+5ad591ea,Starting Tracker metadata database store and lookup manager...,16
+c3d20f15,Started Tracker metadata database store and lookup manager.,16
+fe5407c8,Starting Tracker metadata extractor...,12
+99dee571,Set scheduler policy to SCHED_IDLE,12
+ffe2e390,Setting priority nice level to 19,12
+733ede99,Started Tracker metadata extractor.,12
+6179f6aa,"[session uid=1000 pid=1696] Activating service <*> requested by ':1.37' (uid=1000 pid=1923 comm=""/usr/bin/gnome-shell "" label=""unconfined"")",15
+64806584,"Called ""net usershare info"" but it failed: Falló al ejecutar el proceso hijo «net» (No such file or directory)",8
+70e66c14,tracker-extract.service: Succeeded.,12
+76e1785e,Se está abriendo en una sesión de navegador existente.,10
+8923a24b,gnome-launched-chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop-55883.scope: Succeeded.,1
+e0aa021e,OK,16
+d491179d,tracker-store.service: Succeeded.,16
+ea591cc4,gnome-launched-chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default.desktop-56261.scope: Succeeded.,1
+031a8489,Initial synchronization to time server <*>:123 (ntp.ubuntu.com).,1
+4d8d2d96,[Modules] Checking for host updates.,8
+9fe63de1,[Modules] Host is up to date.,8
+4e48f01b,[Modules] Checking for module updates at https://discord.com/api/modules/stable/versions.json,8
+14e7ff93,[Modules] No module updates available.,8
+c8b6b98e,(root) CMD ( cd / && run-parts --report /etc/cron.hourly),8
+f71dcb3e,<*> Invalid node channel message,2
+2511e0e8,<*> InitializeSandbox() called with multiple threads in process gpu-process.,2
+812102d6,Started snap.code.code.4e3bfef6-fa9d-4db6-9fa9-c13b6f0fd510.scope.,1
+1101716d,gnome-launched-code_code.desktop-57354.scope: Succeeded.,1
+7e21cb19,"Warning: 'sandbox' is not in the list of known options, but still passed to Electron/Chromium.",1
+8c7f4128,[83548.342656] TCP: request_sock_TCP: Possible SYN flooding on port 49152. Sending cookies. Check SNMP counters.,1
+67f9bc5a,(root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi),8
+c56374aa,Started Run anacron jobs.,8
+32563415,Anacron 2.3 started on 2021-04-06,8
+a55b210b,Starting Fingerprint Authentication Daemon...,5
+0f7f092a,Started Fingerprint Authentication Daemon.,5
+b4eee677,gnome-launched-google-chrome.desktop-58246.scope: Succeeded.,1
+4532a18f,gnome-launched-google-chrome.desktop-58806.scope: Succeeded.,1
+f3acb799,"[session uid=1000 pid=1696] Activating via systemd: service <*> <*> requested by <*> (uid=1000 <*> <*> <*> "" label=""unconfined"")",6
+37dd5bdf,Starting GNOME Terminal Server...,6
+2ab09c24,Started GNOME Terminal Server.,6
+f9da88b9,Started VTE child process <*> launched by gnome-terminal-server process <*>,7
+1eb3948a,Warning: using insecure memory!,2
+55f5aea8,"<*> usb <*> USB disconnect, device number <*>",2
+92a6ef23,<*> usb <*> <*> SuperSpeed Gen 1 USB device number <*> using xhci_hcd,3
+096e32b2,"<*> usb <*> New USB device found, idVendor=05e3, <*> bcdDevice= 6.54",2
+d6ff29c4,<*> usb <*> New USB device <*> <*> <*> <*>,4
+a4c5b861,<*> usb <*> Product: <*> Hub,2
+c77d1c7c,<*> usb <*> Manufacturer: <*>,3
+002cfa8b,<*> hub <*> USB hub found,2
+27599108,<*> hub <*> 4 ports detected,2
+11f28a8c,[86233.900401] usb 1-4: new high-speed USB device number 11 using xhci_hcd,1
+81d027da,[86234.149134] usb 2-3.1: Product: USB 10/100/1000 LAN,1
+a94b803d,[86234.149136] usb 2-3.1: SerialNumber: 001000001,1
+0ba8a4c8,[86234.282636] r8152 2-3.1:1.0: load rtl8153b-2 v1 10/23/19 successfully,1
+16a0358e,[86234.316553] r8152 2-3.1:1.0 eth0: v1.11.11,1
+e87a7068,<info> [1617703986.8477] manager: (eth0): new Ethernet device (/org/freedesktop/NetworkManager/Devices/6),1
+8ea7b04d,"checking bus 2, device 6: ""/sys/devices/pci0000:00/00<*>.0/usb2/2-3/2-3.1""",2
+0abe4860,"bus: 2, device: 6 was not an MTP device",2
+b343b57d,Using default interface naming scheme 'v245'.,1
+fc525586,"ethtool: autonegotiation is unset or enabled, the speed and duplex are not writable.",2
+ffee76dc,[86234.394419] r8152 2-3.1:1.0 enx00e04c6acbf8: renamed from eth0,1
+03f74d33,<info> [1617703986.9476] device (eth0): interface index 5 renamed iface from 'eth0' to 'enx00e04c6acbf8',1
+948ca007,<info> [1617703986.9748] settings: (enx00e04c6acbf8): created default wired connection 'Conexión cableada 1',1
+3f51d17c,[86237.351465] r8152 2-3.1:1.0 enx00e04c6acbf8: carrier on,1
+ca8edc67,<info> [1617703989.8815] device (enx00e04c6acbf8): carrier: link connected,1
+b3f44388,<info> [1617703989.8923] policy: auto-activating connection 'Conexión cableada 1' (58dc505a-ce5a-39db-9618-d8ff94e531c3),1
+91556641,<info> [1617703989.8961] device (enx00e04c6acbf8): Activation: starting connection 'Conexión cableada 1' (58dc505a-ce5a-39db-9618-d8ff94e531c3),1
+06800b37,<info> <*> policy: set 'Conexión cableada 1' (enx00e04c6acbf8) as default for IPv4 routing and DNS,3
+e0b2ff57,(II) modeset(0): EDID vendor <*> prod id <*>,24
+464d36cb,(II) modeset(0): Printing DDC gathered Modelines:,24
+0cf5e227,"(II) modeset(0): Modeline ""1920x1080""x0.0 152.84 1920 2000 2060 2250 1080 1086 1094 1132 -hsync -vsync (67.9 kHz eP)",2
+abf4429f,(II) Quirked EDID physical size to 2x1 cm,24
+a0e4af82,(II) modeset(0): Allocate new frame buffer 3840x1080 stride,1
+bc05ee89,failed to get session [pid 2066]: No hay datos disponibles,1
+1cf8a4c4,"stateengine.go:150: state ensure error: cannot sections: got unexpected HTTP status code 403 via GET to ""https://api.snapcraft.io/api/v1/snaps/sections""",1
+8e2fb763,Window manager warning: Invalid WM_TRANSIENT_FOR window <*> specified for <*>,52
+038a758d,Starting Cleanup of Temporary Directories...,1
+c92539ee,systemd-tmpfiles-clean.service: Succeeded.,1
+2407c43f,Finished Cleanup of Temporary Directories.,1
+ad5a773d,fwupd.service: Succeeded.,1
+a341a7c4,vte-spawn-1944d915-3f04-42f4-8d14-a6561bf28123.scope: Succeeded.,1
+134e83ec,gnome-terminal-server.service: Succeeded.,5
+50a8044b,"<*> audit: type=1400 <*> apparmor=""ALLOWED"" <*> profile=""libreoffice-oopslash"" name=""/tmp/OSL_PIPE_1000_SingleOfficeIPC_a176e9dd63f5c7cf8c9b8783418cb1"" <*> comm=""oosplash"" <*> <*> fsuid=1000 ouid=1000",10
+7f95160f,<*> <*> GL_INVALID_OPERATION: Invalid fence object.,5
+5cedc2ba,<*> Skia shader compilation error,47
+781f5987,------------------------,47
+c48c42c9,Errors:,47
+9a4d6c72,/org/bluez/hci0/dev_EB_06_EF_40_A8_A9/sep1/fd2: fd(32) ready,1
+6718ec85,Supervising <*> threads of 1 processes of 1 users.,4
+fbcd688d,Successfully made thread <*> of process 1691 owned by '1000' RT at priority 5.,2
+7133ac04,[89070.825900] input: Mpow H7 (AVRCP) as /devices/virtual/input/input21,1
+136afe63,(II) config/udev: Adding input device Mpow H7 (AVRCP) (/dev/input/event17),1
+b4cfd848,"(**) Mpow H7 (AVRCP): Applying InputClass ""libinput keyboard catchall""",1
+e770bf93,(II) Using input driver 'libinput' for 'Mpow H7 (AVRCP)',1
+1626a5a3,(II) systemd-logind: got fd for /dev/input/event17 13:81 fd 101 paused 0,1
+60d56423,(**) Mpow H7 (AVRCP): always reports core events,1
+61e75589,"(**) Option ""Device"" ""/dev/input/event17""",1
+66fa221a,"(**) Option ""_source"" ""server/udev""",1
+e071f20c,(II) event17 - Mpow H7 (AVRCP): is tagged by udev as: Keyboard,2
+9d479eed,(II) event17 - Mpow H7 (AVRCP): device is a keyboard,2
+9ae1c18d,(II) event17 - Mpow H7 (AVRCP): device removed,1
+7ad00189,"(**) Option ""config_info"" ""udev:/sys/devices/virtual/input/input21/event17""",1
+97a128f7,"(II) XINPUT: Adding extended input device ""Mpow H7 (AVRCP)"" (type: KEYBOARD, id 16)",1
+1d30d406,"(**) Option ""xkb_model"" ""pc105""",1
+4c739a63,"(**) Option ""xkb_layout"" ""es""",1
+8739cb98,"(WW) Option ""xkb_variant"" requires a string value",1
+283ac982,"(WW) Option ""xkb_options"" requires a string value",1
+cfe52e44,Starting Portal service...,1
+c07386a2,Starting Portal service (GTK+/GNOME implementation)...,1
+c7330144,Started Portal service (GTK+/GNOME implementation).,1
+2bcedd17,Started Portal service.,1
+ff0ca9e2,(II) modeset(0): Using <*> ranges from config file,44
+46f57783,"(II) modeset(0): Modeline ""1920x1080i""x0.0 74.25 1920 <*> <*> <*> 1080 1084 1094 1125 interlace +hsync +vsync <*> kHz <*>",44
+717da8b9,(II) modeset(0): Modeline <*> <*> 1280 <*> <*> <*> <*> <*> <*> <*> +hsync +vsync <*> kHz e),66
+99c66705,(II) modeset(0): Modeline <*> <*> <*> <*> <*> <*> 480 <*> <*> <*> -hsync -vsync <*> kHz e),89
+3ae19809,(II) modeset(0): Modeline <*> 27.00 1440 <*> <*> <*> <*> <*> <*> <*> interlace -hsync -vsync <*> kHz e),44
+93a1e4e6,(II) modeset(0): Modeline <*> 27.00 720 <*> <*> <*> <*> <*> <*> <*> -hsync -vsync <*> kHz e),43
+10d71595,"(II) modeset(0): Modeline ""1920x1080""x0.0 <*> 1920 <*> <*> <*> 1080 1084 1089 1125 +hsync +vsync <*> kHz e)",66
+b31bbc61,"(II) modeset(0): Modeline ""800x600""x0.0 <*> 800 <*> <*> <*> 600 <*> <*> <*> +hsync +vsync <*> kHz e)",88
+373661dd,"(II) modeset(0): Modeline ""1024x768""x0.0 <*> 1024 <*> <*> <*> 768 <*> <*> <*> <*> <*> <*> kHz e)",66
+757f1727,"(II) modeset(0): Modeline ""832x624""x0.0 57.28 832 864 928 1152 624 625 628 667 -hsync -vsync (49.7 kHz e)",22
+66e9b666,"(II) modeset(0): Modeline ""1152x864""x0.0 108.00 1152 1216 1344 1600 864 865 868 900 +hsync +vsync (67.5 kHz e)",22
+232267e6,"(II) modeset(0): Modeline ""1920x1200""x0.0 154.00 1920 1968 2000 2080 1200 1203 1209 1235 +hsync -vsync (74.0 kHz e)",22
+34a4f71d,"(II) modeset(0): Modeline ""1280x800""x0.0 122.50 1280 1360 1496 1712 800 803 809 843 -hsync +vsync (71.6 kHz e)",22
+77cddd1b,"(II) modeset(0): Modeline ""1400x1050""x0.0 179.50 1400 1504 1656 1912 1050 1053 1057 1105 -hsync +vsync (93.9 kHz e)",22
+82f91b38,Unable to get default <*>,2
+ff3ed79d,<*> Bluetooth: hci0: SCO packet for unknown connection handle <*>,1870
+6cc3d8b1,[2021-04-06 <*>.575] [3670] (audio_mixer_manager_pulse_linux.cc:724): failed to set volume,1
+540b58be,gnome-launched-gnome-control-center.desktop-65292.scope: Succeeded.,1
+58c30721,<*> Bluetooth: hci0: urb <*> submission failed (90),38
+cb15a138,<*> Bluetooth: hci0: sending frame failed (-90),38
+012957c3,Started snap.zoom-client.zoom-client.096881b9-e1e1-4f02-920c-1b54686a96e8.scope.,1
+af71fe39,Testing for explicit PulseAudio choice...,1
+a015cac6,"...and PulseAudio has been explicitly chosen, so using it.",1
+db44e722,"<*> audit: type=1326 <*> auid=1000 uid=1000 gid=1000 ses=3 subj=snap.zoom-client.zoom-client pid=65676 comm=""zoom"" exe=""/snap/zoom-client/139/zoom/zoom"" sig=0 arch=c000003e syscall=203 compat=0 ip=0x7fc9d6228c7f code=0x50000",4
+88af6792,"<*> handshake failed; returned -1, SSL error code 1, net_error <*>",52
+333212b1,JS ERROR: TypeError: <*> is <*>,10
+76db21eb,snap.zoom-client.zoom-client.096881b9-e1e1-4f02-920c-1b54686a96e8.scope: Succeeded.,1
+914bce17,[3163:3163:0406/143428.788721:ERROR:nsPKCS12Blob.cpp(216)] Could not grab a handle to the certificate in the slot from the corresponding PKCS#12 DER certificate.,1
+ce6e3317,"abr 06, 2021 <*> PM <*> <*>",169
+1bd93ce8,INFORMACIÓN: No se usara Proxy para las conexiones de red,11
+aaa1f5a1,INFORMACIÓN: No se buscaran nuevas versiones de la aplicacion,11
+2550f978,INFORMACIÓN: AutoFirma 1.6.5,11
+446a13b2,Resolucion DPI de pantalla: 0,11
+aeffb177,Sistema operativo: Linux,11
+f5ea62f2,Version del SO: 5.8.0-48-generic,11
+0df1d6a0,Version de Java: 1.8.0_282,11
+42fe4bdb,Arquitectura del JRE: 64,11
+28f6f1dc,Java Vendor: Private Build,11
+386dbe88,Localizacion por defecto: es_ES,11
+b7539865,Tamano actual en memoria: 150MB,11
+eaa3a8c8,Tamano maximo de memoria: 1740MB,11
+f4b037b2,Memoria actualmente libre: <*>,11
+57e0da85,INFORMACIÓN: Invocacion por protocolo con URL:,8
+57f44c63,"afirma://service?ports=49698,64384,51422&v=1&idsession=D13roTquIT8uTVkENR9i",1
+9585405b,INFORMACIÓN: Se inicia la invocacion por servicio: <*>,8
+0beb7509,GRAVE: Error con el keyStore: java.security.KeyStoreException: No se encuentra el almacen para el cifrado de la comunicacion SSL,7
+81979cdc,"afirma://service?ports=58834,60843,50068&v=1&idsession=otzJcOO4DpKOslPkC2Jz",1
+3584d117,JS WARNING: [resource:///org/gnome/shell/ui/workspacesView.js <*> reference to undefined property 1,2
+543a8838,Source ID <*> was not found when attempting to remove it,5
+585cb8dd,INFORMACIÓN: Apertura como herramienta de escritorio,3
+81cd977c,"SLF4J: Failed to load class ""org.slf4j.impl.StaticLoggerBinder"".",4
+88662ded,SLF4J: Defaulting to no-operation (NOP) logger implementation,4
+2d8d4d3c,SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.,4
+54c52d30,INFORMACIÓN: Se intenta una precarga temprana de NSS,3
+f4ad48ca,INFORMACIÓN: Configuracion de NSS para SunPKCS11:,4
+a2cb6076,name=NSSCrypto-AFirma,4
+ef268b5c,library=/usr/lib/thunderbird/libsoftokn3.so,4
+16ba244c,attributes=compatibility,4
+f96962a5,slot=2,4
+be5728fc,showInfo=false,4
+bd5994ca,allowSingleThreadedModules=true,4
+540d146d,"<*> certPrefix='' keyPrefix='' flags='readOnly'""",4
+6cdbb5eb,INFORMACIÓN: NSS necesita una precarga o tratamiento de sus dependencias: java.lang.reflect.InvocationTargetException,3
+1af979c8,ADVERTENCIA: Ha fallado el segundo intento de carga de NSS: java.lang.reflect.InvocationTargetException,3
+691ed791,GRAVE: Error obteniendo el proveedor NSS: java.lang.reflect.InvocationTargetException,3
+e32c7a70,java.lang.reflect.InvocationTargetException,3
+8afcb377,#011at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method),3
+e5493b4d,#011at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62),3
+8da8ba7e,#011at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45),3
+d485aef9,#011at java.lang.reflect.Constructor.newInstance(Constructor.java:423),3
+75bd19c1,#011at es.gob.afirma.keystores.mozilla.MozillaKeyStoreUtilities.loadNssJava8(MozillaKeyStoreUtilities.java:680),3
+b40e2b19,#011at es.gob.afirma.keystores.mozilla.MozillaKeyStoreUtilities.loadNSS(MozillaKeyStoreUtilities.java:727),3
+42ce45fd,#011at es.gob.afirma.keystores.mozilla.NssKeyStoreManager.getNssProvider(NssKeyStoreManager.java:122),3
+54b9c14b,#011at es.gob.afirma.keystores.mozilla.NssKeyStoreManager.init(NssKeyStoreManager.java:59),3
+799d7121,#011at es.gob.afirma.keystores.mozilla.MozillaUnifiedKeyStoreManager.init(MozillaUnifiedKeyStoreManager.java:72),3
+0014368a,#011at es.gob.afirma.keystores.AOKeyStoreManagerFactory.getNssKeyStoreManager(AOKeyStoreManagerFactory.java:511),3
+f307567a,#011at es.gob.afirma.keystores.AOKeyStoreManagerFactory.getMozillaUnifiedKeyStoreManager(AOKeyStoreManagerFactory.java:542),3
+144d2eb1,#011at es.gob.afirma.keystores.AOKeyStoreManagerFactory.getAOKeyStoreManager(AOKeyStoreManagerFactory.java:133),3
+3b134cf2,#011at es.gob.afirma.standalone.SimpleAfirma.main(SimpleAfirma.java:646),3
+770ba489,Caused by: java.security.ProviderException: Initialization failed,3
+49289065,#011at sun.security.pkcs11.SunPKCS11.<init>(SunPKCS11.java:387),3
+fda90b8d,#011at sun.security.pkcs11.SunPKCS11.<init>(SunPKCS11.java:107),3
+21863371,#011... 13 more,3
+b396422f,Caused by: sun.security.pkcs11.wrapper.PKCS11Exception: 0xCE534351,3
+7cc476c9,#011at sun.security.pkcs11.wrapper.PKCS11.C_Initialize(Native Method),3
+e799b18d,#011at sun.security.pkcs11.wrapper.PKCS11$SynchronizedPKCS11.C_Initialize(PKCS11.java:1627),3
+a01c6740,#011at sun.security.pkcs11.wrapper.PKCS11.getInstance(PKCS11.java:163),3
+33434230,#011at sun.security.pkcs11.SunPKCS11.<init>(SunPKCS11.java:341),3
+d4d9fbce,#011... 14 more,3
+98348fab,INFORMACIÓN: Inicializamos el almacen de tipo: DNIe y tarjetas FNMT-TIF,4
+ae0f3372,INFORMACIÓN: No se ha encontrado un DNIe: java.security.ProviderException: No se ha podido inicializar el proveedor de DNIe: es.gob.jmulticard.apdu.connection.NoReadersFoundException: No se detectaron lectores de tarjetas en el sistema,4
+51ae8a2c,INFORMACIÓN: Inicializamos el almacen de tipo: Tarjeta FNMT-RCM CERES 4.30 o superior,4
+5b47bd4a,INFORMACIÓN: No se ha encontrado una tarjeta CERES 4.30 o superior: java.security.ProviderException: No se ha podido inicializar el proveedor de Ceres 4.30 y superior: es.gob.jmulticard.apdu.connection.NoReadersFoundException: No se detectaron lectores de tarjetas en el sistema,4
+ed5e2b26,INFORMACIÓN: Inicializamos el almacen de tipo: Tarjeta FNMT-RCM CERES,4
+4cb12693,INFORMACIÓN: No se ha encontrado una tarjeta CERES: java.security.ProviderException: No se ha podido conectar con la tarjeta CERES: es.gob.jmulticard.apdu.connection.NoReadersFoundException: No se detectaron lectores de tarjetas en el sistema,4
+9dabe085,INFORMACIÓN: Se incluiran los modulos nativos de DNIe/CERES si se encuentran configurados,4
+bcef35f1,GRAVE: No se han podido obtener los modulos externos de Mozilla desde 'secmod.db': es.gob.afirma.core.AOException: El directorio del perfil de Mozilla proporcionado no contiene una base de datos de modulos (secmod.db),3
+0835876b,INFORMACIÓN: No se han encontrado modulos PKCS#11 externos instalados en Firefox,4
+9b06dfc7,INFORMACIÓN: Establecido KeyStoreManager: Gestor de almacenes de claves Mozilla / Firefox (unificado) con nombre Mozilla / Firefox (unificado),3
+1126fb50,INFORMACIÓN: Cargando plugins,3
+79674125,INFORMACIÓN: Iniciando entorno grafico,3
+3a44deb6,INFORMACIÓN: Se omite la carga concurrente de almacen por haberse hecho una precarga previa,3
+18d76aee,gnome-launched-afirma.desktop-73296.scope: Succeeded.,1
+8098c5aa,"afirma://service?ports=52055,49355,53728&v=1&idsession=7xaTSgfdGKGFE5WtzMox",1
+bf0e0fac,"[session uid=1000 pid=1696] Activating service name='org.gnome.evince.Daemon' requested by ':1.831' (uid=1000 pid=73803 comm=""evince /home/ramos/Descargas/offerletter (2).pdf "" label=""/usr/bin/evince (enforce)"")",1
+eb750303,"afirma://service?ports=57088,50396,63522&v=1&idsession=c2zi9AUlMYaxTIBxFkZA",1
+e1914108,"afirma://service?ports=55885,63147,52147&v=1&idsession=mCQ1VSSFXYzqzs1Qwdps",1
+0261b574,gnome-launched-org.gnome.Terminal.desktop-76045.scope: Succeeded.,1
+37d8aa51,"afirma://service?ports=57947,49625,53299&v=1&idsession=NcJ9HblQDojIWGJrM8bp",1
+2b409d3d,[3203:3203:0406/155429.714393:ERROR:gl_utils.cc(314)] [.RendererMainThread-0x1d2207b21500] GL_INVALID_FRAMEBUFFER_OPERATION: Draw framebuffer is incomplete,1
+f8ef703a,Window manager warning: Buggy client sent a _NET_ACTIVE_WINDOW message with a timestamp of 0 for 0x6000d36,1
+72d4523a,"Exception in thread ""AWT-EventQueue-1"" javax.help.BadIDException: Not valid ID: SimpleAfirma",1
+7a276a42,#011at javax.help.Map$ID.create(Map.java:134),1
+3a1a4f1d,#011at javax.help.Presentation.setCurrentID(Presentation.java:132),1
+83540a64,#011at javax.help.DefaultHelpBroker.setCurrentID(DefaultHelpBroker.java:350),1
+0b95b0f8,#011at es.gob.afirma.standalone.JavaHelp.showHelp(JavaHelp.java:92),1
+926bc940,#011at es.gob.afirma.standalone.SimpleAfirma.showHelp(SimpleAfirma.java:506),1
+1273eb09,#011at es.gob.afirma.standalone.ui.MainMenu.lambda$createUI$11(MainMenu.java:345),1
+9a067ee5,#011at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022),1
+b2473b6e,#011at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348),1
+852ea1c8,#011at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402),1
+d2ada4bd,#011at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259),1
+7d6db1fa,#011at javax.swing.AbstractButton.doClick(AbstractButton.java:376),1
+cf09d07d,#011at javax.swing.plaf.basic.BasicMenuItemUI.doClick(BasicMenuItemUI.java:842),1
+3eb599c2,#011at javax.swing.plaf.basic.BasicMenuItemUI$Handler.mouseReleased(BasicMenuItemUI.java:886),1
+e1d742f1,#011at java.awt.Component.processMouseEvent(Component.java:6539),1
+698dd867,#011at javax.swing.JComponent.processMouseEvent(JComponent.java:3324),1
+51abc588,#011at java.awt.Component.processEvent(Component.java:6304),1
+cb1e4bec,#011at java.awt.Container.processEvent(Container.java:2239),1
+a060d39e,#011at java.awt.Component.dispatchEventImpl(Component.java:4889),1
+e684a9ef,#011at java.awt.Container.dispatchEventImpl(Container.java:2297),1
+0bf76ce5,#011at java.awt.Component.dispatchEvent(Component.java:4711),2
+f7e3918e,#011at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4904),1
+b000eae9,#011at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4535),1
+061727a7,#011at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4476),1
+02c987d6,#011at java.awt.Container.dispatchEventImpl(Container.java:2283),1
+52b47cfb,#011at java.awt.Window.dispatchEventImpl(Window.java:2746),1
+633c048e,#011at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:760),1
+e9fb3076,#011at java.awt.EventQueue.access$500(EventQueue.java:97),1
+ffc24dc4,#011at java.awt.EventQueue$3.run(EventQueue.java:709),1
+168db37a,#011at java.awt.EventQueue$3.run(EventQueue.java:703),1
+069715e4,#011at java.security.AccessController.doPrivileged(Native Method),2
+39177243,#011at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74),2
+fe17be30,#011at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:84),1
+24993be8,#011at java.awt.EventQueue$4.run(EventQueue.java:733),1
+2fd626f3,#011at java.awt.EventQueue$4.run(EventQueue.java:731),1
+3b59c8fe,#011at java.awt.EventQueue.dispatchEvent(EventQueue.java:730),1
+991112cc,#011at org.GNOME.Accessibility.AtkWrapper$6.dispatchEvent(AtkWrapper.java:705),1
+924e58a0,#011at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205),1
+57c4f43e,#011at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116),1
+16ca1f41,#011at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105),1
+90006e23,#011at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101),1
+487893b0,#011at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93),1
+0242b471,#011at java.awt.EventDispatchThread.run(EventDispatchThread.java:82),1
+0bff78b8,Could not create transient scope for PID <*> GDBus.Error:org.freedesktop.DBus.Error.UnixProcessIdUnknown: Process with ID <*> does not exist.,2
+b932be6f,"afirma://service?ports=50344,61511,58359&v=1&idsession=m3EyZRqnoDZLz0hZ7nAe",1
+1ff93471,gnome-launched-afirma.desktop-77249.scope: Succeeded.,1
+7fb3b450,Failed to set the markup of the actor 'ClutterText': Error en la línea 1: Entity did not end with a semicolon; most likely you used an ampersand character without intending to start an entity — escape ampersand as &amp;,2
+7cd09dfa,INFORMACIÓN: Directorio de trabajo: /home/ramos/.afirma/AutoFirma,1
+e06b1c4b,INFORMACIÓN: Se va a instalar el certificado CA raiz en <*> <*>,2
+eb880f44,"Microsoft Teams - Preview1, Impossible to lookup icon for 'Microsoft Teams - Preview1_10-panel' in path /tmp/.org.chromium.Chromium.qANPow",1
+9f6b6c78,unable to update icon for Microsoft Teams - Preview1,1
+7afee5de,gnome-launched-google-chrome.desktop-78437.scope: Succeeded.,1
+414479e5,gnome-launched-x-terminal-emulator-78530.scope: Succeeded.,1
+7bde572f,gnome-launched-google-chrome.desktop-3163.scope: Succeeded.,1
+709824ed,INFORMACIÓN: Se ejecutara el siguiente comando:,6
+b097294a,[/home/ramos/.afirma/AutoFirma/uninstallRestore--1121001669.sh],1
+a073a339,INFORMACIÓN: Salida de error:,3
+ecb6ba94,"certutil: could not find certificate named ""SocketAutoFirma"": SEC_ERROR_INVALID_ARGS: security library: invalid arguments.",3
+4e3dad81,[/home/ramos/.afirma/AutoFirma/installRestore-357944594.sh],1
+ffd64ed0,INFORMACIÓN: Se comprueba la existencia del perfil de Firefox: <*>,2
+8dff265b,INFORMACIÓN: Ruta: /home/ramos/.mozilla/firefox/profiles.ini,1
+e70d0aa9,[/home/ramos/.afirma/AutoFirma/uninstallRestore--36385399.sh],1
+cd4710b9,[/home/ramos/.afirma/AutoFirma/installRestore-1958733580.sh],1
+6663e759,[/home/ramos/.afirma/AutoFirma/uninstallRestore--2087873115.sh],1
+ccf65ee1,[/home/ramos/.afirma/AutoFirma/installRestore-1556741112.sh],1
+b2017263,Impossible to send about-to-show to menu: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.Failed: error occurred in AboutToShow,1
+8847d907,"afirma://service?ports=57687,60907,62635&v=1&idsession=EaBz5phIbc3VcgQlggcU",1
+34c2b714,INFORMACIÓN: Se utilizara el siguiente almacen para establecer el socket SSL: /home/ramos/.afirma/AutoFirma/autofirma.pfx,1
+ab7b93a4,"INFORMACIÓN: Iniciando servicio local de firma: afirma://service?ports=57687,60907,62635&v=1&idsession=EaBz5phIbc3VcgQlggcU",1
+7011f768,INFORMACIÓN: Se ha recibido un idSesion para la transaccion: EaBz5phIbc3VcgQlggcU,1
+072815e5,INFORMACIÓN: Establecido el puerto 57687 para el servicio Cliente @firma,1
+15dd125b,INFORMACIÓN: Detectada conexion entrante,3
+05110052,INFORMACIÓN: Recibido comando de tipo: <*>,3
+4db0e20d,INFORMACIÓN: Comando URI recibido por HTTP: <*>,3
+e0cae7f5,INFORMACIÓN: Mandando respuesta a la aplicacion: echo=,1
+b8c72489,INFORMACIÓN: Se invoca a la aplicacion para realizar una operacion de firma/multifirma,1
+bc8d710f,INFORMACIÓN: URI recibida: afirma://sign?op=sign&algorithm=SHA1withRSA&format=CAdES&properties=bW9kZT1pbXBsaWNpdApmaWx0ZXJzLjE9aXNzdWVyLnJmYzIyNTQ6IChDTj1BQzEgUkFJWiBNVElOKik7bm9uZXhwaXJlZDo7a2V5dXNhZ2Uubm9ucmVwdWRpYXRpb246dHJ1ZQpmaWx0ZXJzLjI9aXNzdWVyLnJmYzIyNTQ6IChDTj1BQyBETklFKik7bm9uZXhwaXJlZDo7a2V5dXNhZ2Uubm9ucmVwdWRpYXRpb246dHJ1ZQpmaWx0ZXJzLjM9aXNzdWVyLnJmYzIyNTQ6ICgmKCEoQ049QUMxIFJBSVogTVRJTiopKSghKENOID0gQUMgRE5JRSopKSk7bm9uZXhwaXJlZDo%3D&dat=eyAic29saWNpdGFudGUiIDogeyJpZFNvbGljaXRhbnRlTiI6MjIxNjAwNCwidGFibGFNYWVzdHJh%0AQnlJZFRpcG9Eb2N1bWVudG9OIjp7ImNvZGlnbyI6IkQiLCJkZXRhbGxlIjoiTklGIn0sIm51bWVy%0Ab0RvY3VtZW50b0MiOiI1MTEzMTEyNSIsImxldHJhTmlmQyI6IkQiLCJhcGVsbGlkbzFDIjoiUkFN%0AT1MgRkVSTkFOREVaIiwiYXBlbGxpZG8yQyI6IlJBTU9TIiwibm9tYnJlQyI6IkpBVklFUiIsInRh%0AYmxhTWFlc3RyYUJ5SWRTZXhvTiI6eyJjb2RpZ28iOiJNIiwiZGV0YWxsZSI6Ik1BU0NVTElOTyJ9%0AfSAsICJvdHJvc0RhdG9zUGVyc29uYWxlcyIgOiB7ICJ0YWJsYU1hZXN0cmFCeUlkTmFjaW9uYWxp%0AZGFkTiIgOiB7fSB9ICwgImRhdG9zQ29udGFjdG8iIDogeyJub3RpZmljYUFwYXJ0YWRvQ29ycmVv%0AcyI6e30sImNvcnJlb0VsZWN0cm9uaWNvQyI6ImpyYW1vc2Y5OUBnbWFpbC5jb20iLCJtb3ZpbEMi%0AOiI2NzM3ODA2NzkiLCJ0ZWxlZm9ub0MiOiI2NzM3ODA2NzkifSAsICJkb21pY2lsaW9SZXNpZGVu%0AY2lhIiA6IHsidGFibGFNYWVzdHJhQnlJZFRpcG9WaWFOIjp7ImNvZGlnbyI6IkNMIiwiZGV0YWxs%0AZSI6IkNBTExFIn0sImNvbXVuaWRhZEF1dG9ub21hIjp7ImRlbm9taW5hY2lvbkMiOiJNQURSSUQi%0AfSwicHJvdmluY2lhIjp7ImRlbm9taW5hY2lvbkMiOiJNYWRyaWQiLCJjb211bmlkYWRBdXRvbm9t%0AYSI6eyJkZW5vbWluYWNpb25DIjoiTUFEUklEIn19LCJtdW5pY2lwaW8iOnsiZGVub21pbmFjaW9u%0AQyI6Ik1hZHJpZCJ9LCJub21icmVWaWFDIjoiQXZlbmlkYSBkZWwgRG9jdG9yIEdhcmPtYSBUYXBp%0AYSIsIm51bWVyb1ZpYVB1YmxpY2FDIjoiMTU5IiwicGlzb0MiOiIxIiwiYmxvcXVlQyI6IkciLCJs%0AZXRyYVB1ZXJ0YUMiOiJBIiwiY29kaWdvUG9zdGFsQyI6IjI4MDMwIn0gLCAiZG9taWNpbGlvQ29u%0AdGFjdG8iIDoge30gLCAib3Ryb3NEYXRvcyIgOiB7ImNoZWNrUGVyc29uYUNhcmdvIjoiTm8ifSAs%0AICJlc3R1ZGlvcyIgOiBbeyJpZE5pdmVsRm9ybWF0aXZvQyI6eyJkZW5vbWluYWNpb25DIjoiR1JB%0ARE9TIFVOSVZFUlNJVEFSSU9TIERFIDI0MCBDUslESVRPUyBFQ1RTICg0IEHRT1MpLCBESVBMT01B%0ARE9TLCBUzVRVTE9TIFBST1BJT1MgVU5JVkVSU0lUQVJJT1MgREUgRVhQRVJUTywgRVNQRUNJQUxJ%0AU1RBIFkgU0lNSUxBUkVTIn0sImlkRm9ybWFjaW9uQyI6IjU5NTIzMDA3NTIwMyJ9XSAsICJpZGlv%0AbWFzSW5mb3JtYXRpY2EiIDoge30gLCAiaWRpb21hcyIgOiBbeyJpZFNlbGVjdG9ySWRpb21hIjp7%0AImNvZGlnbyI6IjAxIiwiZGV0YWxsZSI6IkVzcGHxb2wifSwiY2hlY2tNYXRlcm5vTiI6ZmFsc2Us%0AIm5pdmVsSWRpb21hcyI6eyJ0YWJsYU1hZXN0cmFCeU5pdmVsSGFibGFOIjp7ImNvZGlnbyI6IjYi%0ALCJkZXRhbGxlIjoiQzIgLSBBdmFuemFkbyAyIn0sInRhYmxhTWFlc3RyYUJ5Tml2ZWxMZWVOIjp7%0AImNvZGlnbyI6IjYiLCJkZXRhbGxlIjoiQzIgLSBBdmFuemFkbyAyIn0sInRhYmxhTWFlc3RyYUJ5%0ATml2ZWxFc2NyaWJlTiI6eyJjb2RpZ28iOiI2IiwiZGV0YWxsZSI6IkMyIC0gQXZhbnphZG8gMiJ9%0ALCJjaGVja09maWNpYWxOIjpmYWxzZX19LHsiaWRTZWxlY3RvcklkaW9tYSI6eyJjb2RpZ28iOiIw%0AMiIsImRldGFsbGUiOiJJbmds6XMifSwiY2hlY2tNYXRlcm5vTiI6ZmFsc2UsIm5pdmVsSWRpb21h%0AcyI6eyJ0YWJsYU1hZXN0cmFCeU5pdmVsSGFibGFOIjp7ImNvZGlnbyI6IjUiLCJkZXRhbGxlIjoi%0AQzEgLSBBdmFuemFkbyAxIn0sInRhYmxhTWFlc3RyYUJ5Tml2ZWxMZWVOIjp7ImNvZGlnbyI6IjUi%0ALCJkZXRhbGxlIjoiQzEgLSBBdmFuemFkbyAxIn0sInRhYmxhTWFlc3RyYUJ5Tml2ZWxFc2NyaWJl%0ATiI6eyJjb2RpZ28iOiI1IiwiZGV0YWxsZSI6IkMxIC0gQXZhbnphZG8gMSJ9LCJjaGVja09maWNp%0AYWxOIjpmYWxzZX19XSAsICJmb3JtYWNpb24iIDogW10gLCAiZXhwZXJpZW5jaWFMYWJvcmFsIiA6%0AIFt7InRhYmxhTWFlc3RyYUJ5SWRPY3VwYWNpb25OIjp7ImNvZGlnbyI6IjIiLCJkZXRhbGxlIjoi%0AVOljbmljb3MgeSBwcm9mZXNpb25hbGVzIGNpZW507WZpY29zIGUgaW50ZWxlY3R1YWxlcyJ9fV0g%0ALCAiaW50ZXJlc2VzIiA6IHsgImludGVyZXNlc1Byb2Zlc2lvbmFsZXMiIDogeyB9ICwgImludGVy%0AZXNlc0RlZmluZXRlIiA6IHsgfSB9ICwgImNoZWNrZGVjbGFybyIgOiB0cnVlICwgImNoZWNrcHJv%0AdGVjY2lvbiIgOiB0cnVlICwgImNoZWNrY29tcHJvbWV0byIgOiB0cnVlLCJjaGVja05lZXROIjp0%0AcnVlLCJjaGVja0NvbXByb21pc29OIjp0cnVlLCJjaGVja0VtcGFkcm9uYW1pZW50b04iOnRydWUs%0AImNoZWNrQXV0b0NhbXBhbmlhTiI6dHJ1ZSB9&sticky=false,1
+4146de1a,INFORMACIÓN: El contenido a obtener es Base64,1
+07a33591,INFORMACIÓN: Se inicia la operacion de firma,1
+e8872427,INFORMACIÓN: Detectado directorio de perfil de NSS: ̴/.pki/nssdb,1
+e924c5c9,INFORMACIÓN: Proveedor PKCS#11 para NSS anadido para perfil compartido: SunPKCS11-NSSCrypto-AFirma,1
+15a5352a,INFORMACIÓN: Obtenidos los modulos externos de Mozilla desde 'pkcs11.txt',1
+f9e9a8c5,INFORMACIÓN: Obtenido gestor de almacenes de claves: Gestor de almacenes de claves NSS con nombre NSS,1
+13b35a65,INFORMACIÓN: Cargando dialogo de seleccion de certificados...,1
+d355455d,Parametro signatureClaimedRoles: null,1
+e9f5eadb,ADVERTENCIA: No se pudo detectar el formato de los datos,1
+41b1c0f0,ADVERTENCIA: Se omite el cifrado de los datos resultantes por no haberse proporcionado una clave de cifrado,1
+bf470a07,INFORMACIÓN: Se omite el envio por red de los datos resultantes por no haberse proporcionado una URL de destino,1
+d1e372e5,INFORMACIÓN: Se mandaran 1partes,1
+98867ab0,INFORMACIÓN: tam total=11809,1
+a8c9d58b,INFORMACIÓN: Tamano de la parte 1 =11809,1
+dc11a16d,INFORMACIÓN: Mandando respuesta a la aplicacion: Se mandaran 1 partes,1
+931a9aa0,INFORMACIÓN: Mandando respuesta a la aplicacion: Mandada la parte 1 de 1,1
+8e099487,ADVERTENCIA: Se ha caducado la conexion. Se deja de escuchar en el puerto...,1
+4ebfb0b4,Starting Message of the Day...,1
+f014f0e9,motd-news.service: Succeeded.,1
+90d9c217,Finished Message of the Day.,1
+643f32e0,gnome-launched-google-chrome.desktop-81634.scope: Succeeded.,1
+5370685d,"storehelpers.go:551: cannot refresh: snap has no updates available: ""code"", ""core18"", ""core20"", ""discord"", ""docker"", ""gnome-3-28-1804"", ""gnome-3-34-1804"", ""gtk-common-themes"", ""htop"", ""skype"", ""snap-store"", ""snapd"", ""spotify"", ""zoom-client""",2
+fbdc5f0b,"[108064.754986] perf: interrupt took too long (8062 > 8050), lowering kernel.perf_event_max_sample_rate to 24750",1
+fbc137ae,vte-spawn-0d9882bf-f173-4a8b-9971-905eec2803f6.scope: Succeeded.,1
+5c3709e9,vte-spawn-5d1caef7-9620-4274-836a-97353eb47c6d.scope: Succeeded.,1
+31857cba,vte-spawn-c60c4fdc-3309-462b-8d52-a38b2c91d758.scope: Succeeded.,1
+eebda65f,gnome-launched-afirma.desktop-78256.scope: Succeeded.,1
+6bdd6cfb,(root) CMD ( test -x /etc/cron.daily/popularity-contest && /etc/cron.daily/popularity-contest --crond),1
+c3ec64e0,vte-spawn-d4b47a76-c7d4-4995-a856-28c7cd1f6273.scope: Succeeded.,1
+7fae6cfe,gnome-launched-org.gnome.Terminal.desktop-86215.scope: Succeeded.,1
+9ccc3c29,vte-spawn-f3a32de7-65b7-48cd-b9fc-8f331b4e6077.scope: Succeeded.,1
+c39f5440,Reloading.,4
+a6c13c8d,"/lib/systemd/system/dbus.socket:5: ListenStream= references a path below legacy directory /var/run/, updating /var/run/dbus/system_bus_socket → /run/dbus/system_bus_socket; please update the unit file accordingly.",4
+470e9bdb,"Mounting Mount unit for core, revision 10958...",1
+495e3b9c,"Mounted Mount unit for core, revision 10958.",1
+72e949ea,snap-core-10859.mount: Succeeded.,2
+b37fee6f,Starting Daily apt download activities...,1
+318ac6bb,storehelpers.go:551: no install/refresh information results from the store,1
