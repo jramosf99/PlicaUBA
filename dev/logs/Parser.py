@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 import sys
 sys.path.append('../')
-import Drain
+from loglizer import Drain
+
 
 input_dir  = 'logs/'  # The input directory of log file
 output_dir = 'logs/'  # The output directory of parsing results
