@@ -14,11 +14,10 @@ def get_sockets_info():
         type = socket.type
         laddr = socket.laddr
         raddr = socket.raddr
-        status = socket.status
         pid = socket.pid
         sockets.append({
             'fd': fd, 'family': family, 'type': type,
-            'laddr':laddr, 'raddr':raddr,'status':status,'pid':pid, 'detection_time': datetime.now(), 'close': "open"})
+            'laddr':laddr, 'raddr':raddr,'pid':pid, 'detection_time': datetime.now(), 'close': "open"})
     return sockets
 
 

@@ -34,8 +34,6 @@ def get_processes_info():
                 cores = 0
             # get the CPU usage percentage
             cpu_usage = process.cpu_percent()
-            # get the status of the process (running, idle, etc.)
-            status = process.status()
             try:
                 # get the process priority (a lower value means a more prioritized process)
                 nice = int(process.nice())
@@ -60,7 +58,7 @@ def get_processes_info():
             
         processes.append({
             'pid': int(pid), 'name': str(name), 'create_time': create_time,
-            'cores': int(cores), 'cpu_usage': float(cpu_usage), 'status': str(status), 'nice': int(nice),
+            'cores': int(cores), 'cpu_usage': float(cpu_usage), 'nice': int(nice),
             'memory_usage': float(memory_usage), 'n_threads': int(n_threads),'childrens':childrens, 'username': str(username),
         })
     df = pd.DataFrame(processes, index=None)
