@@ -24,13 +24,22 @@ def get_interfaces_info():
             'errin': errin,'errout': errout,'dropout': dropout})
     return interfaces
 
-def network(path):
+def network(path, q,b):
 
     outputPath = path #path of the CSV output file
 
     psutil.net_io_counters.cache_clear()
 
     while True:
-        interfaces = pd.DataFrame(get_interfaces_info())
-        interfaces.to_csv(outputPath, index=None)
-        time.sleep(10)
+        interface = get_interfaces_info()
+        for element in interface:
+            element["eventType"]= 4
+            element["date"]= datetime.now().strftime('%Y-%m-%d, %H:%M:%S')
+            q.put(element)
+        if b:
+            df = pd.DataFrame(interface)
+            if not os.path.isfile(outputPath):
+                df.to_csv(outputPath, index=None, header=True)
+            else:
+                df.to_csv(outputPath, index=None, mode='a', header=False)
+        time.sleep(600)

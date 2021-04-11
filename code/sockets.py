@@ -15,17 +15,18 @@ def get_sockets_info():
         laddr = socket.laddr
         raddr = socket.raddr
         pid = socket.pid
+        if pid == None:
+            pid = 0
         sockets.append({
             'fd': fd, 'family': family, 'type': type,
-            'laddr':laddr, 'raddr':raddr,'pid':pid, 'detection_time': datetime.now(), 'close': "open"})
+            'laddr':laddr, 'raddr':raddr,'pid':pid, 'detection_time': datetime.now().strftime('%Y-%m-%d, %H:%M:%S'), 'close': "open"})
     return sockets
 
 
-def sockets(path):
+def sockets(path, q, b):
 
     outputPath = path #path of the CSV output file
 
-    changes = True
     sockets = pd.DataFrame(get_sockets_info())
     previusSockets = pd.DataFrame(get_sockets_info())
 
@@ -35,16 +36,21 @@ def sockets(path):
         actuales = pd.DataFrame(get_sockets_info())
         terminados =  set(previusSockets['laddr']) -set(actuales['laddr'])
         if len(terminados) > 0:
-            changes = True
-            sockets[sockets.laddr.isin(terminados)] = sockets[sockets.laddr.isin(terminados)].assign(close=datetime.now())
+            sockets[sockets.laddr.isin(terminados)] = sockets[sockets.laddr.isin(terminados)].assign(close=datetime.now().strftime('%Y-%m-%d, %H:%M:%S'))
+            if b:
+                if not os.path.isfile(outputPath):
+                    sockets[sockets.laddr.isin(terminados)].to_csv(outputPath, index=None)
+                else:
+                    sockets[sockets.laddr.isin(terminados)].to_csv(outputPath, index=None, mode='a', header=False)
+            p= sockets[sockets.laddr.isin(terminados)].to_dict('records')
+            for rec in p:
+                rec["eventType"]= 6
+                q.put(rec)
             terminados = set()
         nuevos = set(actuales['laddr']) -set(previusSockets['laddr'])
         if len(nuevos) > 0:
-            changes = True
             sockets = sockets.append(actuales[actuales.laddr.isin(nuevos)])
             nuevos = set()
-        if changes:
-            sockets.to_csv(outputPath, index=None)
         previusSockets = actuales
         changes = False
-        time.sleep(3)
+        time.sleep(20)

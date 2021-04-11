@@ -65,23 +65,27 @@ def get_processes_info():
     df['create_time'] = df['create_time'].apply(datetime.strftime, args=("%Y-%m-%d %H:%M:%S",))
     return df
 
-def process(path):
-
+def process(path, q, b):
     outputPath = path #path of the CSV output file
 
     procesos_viejos = get_processes_info()
 
     while True:
-        time.sleep(1)
+        time.sleep(10)
         procesos = get_processes_info()
         n_terminados = set(procesos_viejos['pid']) - set(procesos['pid'])
         if len(n_terminados)>0:
             procesos_terminados = procesos_viejos[procesos_viejos.pid.isin(n_terminados)]
-            procesos_terminados = procesos_terminados.assign(FinishTime=datetime.now())
-            if not os.path.isfile(outputPath):
-                procesos_terminados.to_csv(outputPath, index=None, header=True)
-            else:
-                procesos_terminados.to_csv(outputPath, index=None, mode='a', header=False)
+            procesos_terminados = procesos_terminados.assign(FinishTime=datetime.now().strftime('%Y-%m-%d, %H:%M:%S'))
+            p= procesos_terminados.to_dict('records')
+            for rec in p:
+                rec["eventType"]= 5
+                q.put(rec)
+            if b:
+                if not os.path.isfile(outputPath):
+                    procesos_terminados.to_csv(outputPath, index=None, header=True)
+                else:
+                    procesos_terminados.to_csv(outputPath, index=None, mode='a', header=False)
         #este bucle se encarga de por cada iteración quedarse con el valor máximo de cpu y memoria
         for i in procesos.index: 
             procces_viejo = procesos_viejos[(procesos_viejos['pid'] == procesos["pid"][i])]
