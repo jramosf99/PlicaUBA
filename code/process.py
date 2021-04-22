@@ -71,7 +71,7 @@ def process(path, q, b):
     procesos_viejos = get_processes_info()
 
     while True:
-        time.sleep(10)
+        time.sleep(1)
         procesos = get_processes_info()
         n_terminados = set(procesos_viejos['pid']) - set(procesos['pid'])
         if len(n_terminados)>0:
@@ -80,6 +80,7 @@ def process(path, q, b):
             p= procesos_terminados.to_dict('records')
             for rec in p:
                 rec["eventType"]= 5
+                rec["childrens"] = len(rec["childrens"])
                 q.put(rec)
             if b:
                 if not os.path.isfile(outputPath):

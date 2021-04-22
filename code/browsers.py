@@ -30,4 +30,4 @@ def browsers(path, q, b):
                     q.put(df)
                     df.to_csv(outputPath, index=None, mode='a', header=False)
             p=pd.to_datetime(datetime.datetime.now()).tz_localize('CET')
-        time.sleep(600)
+        time.sleep(10)

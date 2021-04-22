@@ -19,7 +19,7 @@ def get_sockets_info():
             pid = 0
         sockets.append({
             'fd': fd, 'family': family, 'type': type,
-            'laddr':laddr, 'raddr':raddr,'pid':pid, 'detection_time': datetime.now().strftime('%Y-%m-%d, %H:%M:%S'), 'close': "open"})
+            'laddr':laddr, 'raddr':raddr,'pid':pid, 'detection_time': datetime.now().strftime('%Y-%m-%d, %H:%M:%S'), 'closed_time': "open"})
     return sockets
 
 
@@ -44,7 +44,12 @@ def sockets(path, q, b):
                     sockets[sockets.laddr.isin(terminados)].to_csv(outputPath, index=None, mode='a', header=False)
             p= sockets[sockets.laddr.isin(terminados)].to_dict('records')
             for rec in p:
+                print("wnefoierngpi")
                 rec["eventType"]= 6
+                rec["laddrport"] = rec["laddr"][1]
+                rec["laddr"] = rec["laddr"][0]
+                rec["raddrport"] = rec["raddr"][1]
+                rec["raddr"] = rec["raddr"][0]
                 q.put(rec)
             terminados = set()
         nuevos = set(actuales['laddr']) -set(previusSockets['laddr'])
@@ -53,4 +58,4 @@ def sockets(path, q, b):
             nuevos = set()
         previusSockets = actuales
         changes = False
-        time.sleep(20)
+        time.sleep(2)
