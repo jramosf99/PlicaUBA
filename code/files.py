@@ -29,7 +29,7 @@ def files(path1,path2, q, b):
                 date_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 pattern = "%Y-%m-%d %H:%M:%S"
                 date = int(time.mktime(time.strptime(date_time, pattern)))
-                event = {"eventType": 3, "date":date, "path": os.path.join(path, filename), "type": type_names}
+                event = {"eventType": 3, "date":date, "path": os.path.join(path, filename), "type": type_names[0]}
                 q.put(event)
                 if b:
                     fileEvent = [os.path.join(path, filename), type_names, datetime.now()]

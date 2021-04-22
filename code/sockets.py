@@ -47,7 +47,6 @@ def sockets(path, q, b):
                 rec["eventType"]= 6
                 rec["laddrport"] = rec["laddr"][1]
                 rec["laddr"] = rec["laddr"][0]
-                print(rec["raddr"])
                 if len(rec["raddr"])>0:
                     rec["raddrport"] = rec["raddr"][1]
                     rec["raddr"] = rec["raddr"][0]
