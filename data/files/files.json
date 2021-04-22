@@ -1,6 +1,13 @@
 {
     "events": [
-      
+        {
+            "eventType": 3,
+            "date": 1619122766,
+            "path": "/home/ramos/Escritorio/tocar/activitywatch-master/egrgeg",
+            "type": [
+                "IN_CREATE",
+                "IN_ISDIR"
+            ]
+        }
     ]
 }
-

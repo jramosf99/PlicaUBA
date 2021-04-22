@@ -1,5 +1,148 @@
 {
     "events": [
-      
+        {
+            "name": "lo",
+            "bytes_sent": 55772559,
+            "bytes_recv": 55772559,
+            "packets_sent": 224723,
+            "packets_recv": 224723,
+            "errin": 0,
+            "errout": 0,
+            "dropout": 0,
+            "eventType": 4,
+            "date": 1619122230
+        },
+        {
+            "name": "wlp1s0",
+            "bytes_sent": 1657473203,
+            "bytes_recv": 5178377271,
+            "packets_sent": 2677463,
+            "packets_recv": 6866209,
+            "errin": 0,
+            "errout": 0,
+            "dropout": 0,
+            "eventType": 4,
+            "date": 1619122230
+        },
+        {
+            "name": "docker0",
+            "bytes_sent": 0,
+            "bytes_recv": 0,
+            "packets_sent": 0,
+            "packets_recv": 0,
+            "errin": 0,
+            "errout": 0,
+            "dropout": 0,
+            "eventType": 4,
+            "date": 1619122230
+        },
+        {
+            "name": "lo",
+            "bytes_sent": 55841921,
+            "bytes_recv": 55841921,
+            "packets_sent": 225509,
+            "packets_recv": 225509,
+            "errin": 0,
+            "errout": 0,
+            "dropout": 0,
+            "eventType": 4,
+            "date": 1619122433
+        },
+        {
+            "name": "wlp1s0",
+            "bytes_sent": 1658530513,
+            "bytes_recv": 5209121589,
+            "packets_sent": 2684617,
+            "packets_recv": 6909100,
+            "errin": 0,
+            "errout": 0,
+            "dropout": 0,
+            "eventType": 4,
+            "date": 1619122433
+        },
+        {
+            "name": "docker0",
+            "bytes_sent": 0,
+            "bytes_recv": 0,
+            "packets_sent": 0,
+            "packets_recv": 0,
+            "errin": 0,
+            "errout": 0,
+            "dropout": 0,
+            "eventType": 4,
+            "date": 1619122433
+        },
+        {
+            "name": "lo",
+            "bytes_sent": 55958058,
+            "bytes_recv": 55958058,
+            "packets_sent": 226635,
+            "packets_recv": 226635,
+            "errin": 0,
+            "errout": 0,
+            "dropout": 0,
+            "eventType": 4,
+            "date": 1619122691
+        },
+        {
+            "name": "wlp1s0",
+            "bytes_sent": 1660309554,
+            "bytes_recv": 5239606856,
+            "packets_sent": 2695048,
+            "packets_recv": 6952325,
+            "errin": 0,
+            "errout": 0,
+            "dropout": 0,
+            "eventType": 4,
+            "date": 1619122691
+        },
+        {
+            "name": "docker0",
+            "bytes_sent": 0,
+            "bytes_recv": 0,
+            "packets_sent": 0,
+            "packets_recv": 0,
+            "errin": 0,
+            "errout": 0,
+            "dropout": 0,
+            "eventType": 4,
+            "date": 1619122691
+        },
+        {
+            "name": "lo",
+            "bytes_sent": 55997939,
+            "bytes_recv": 55997939,
+            "packets_sent": 227090,
+            "packets_recv": 227090,
+            "errin": 0,
+            "errout": 0,
+            "dropout": 0,
+            "eventType": 4,
+            "date": 1619122807
+        },
+        {
+            "name": "wlp1s0",
+            "bytes_sent": 1660879342,
+            "bytes_recv": 5256267267,
+            "packets_sent": 2698873,
+            "packets_recv": 6974545,
+            "errin": 0,
+            "errout": 0,
+            "dropout": 0,
+            "eventType": 4,
+            "date": 1619122808
+        },
+        {
+            "name": "docker0",
+            "bytes_sent": 0,
+            "bytes_recv": 0,
+            "packets_sent": 0,
+            "packets_recv": 0,
+            "errin": 0,
+            "errout": 0,
+            "dropout": 0,
+            "eventType": 4,
+            "date": 1619122808
+        }
     ]
 }

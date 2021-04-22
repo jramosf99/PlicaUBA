@@ -47,9 +47,11 @@ def activitytrack(path, q, b):
 
 
     while True:
-        minute = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        time.sleep(300)
-        element = {"eventType": 1, "time":minute, "clicks":counter.clicks, "pulsations":counter.pulsations, "moves":counter.moves, "scrolls":counter.scrolls}
+        time.sleep(30)
+        date_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        pattern = "%Y-%m-%d %H:%M:%S"
+        date = int(time.mktime(time.strptime(date_time, pattern)))
+        element = {"eventType": 1, "time":date, "clicks":counter.clicks, "pulsations":counter.pulsations, "moves":counter.moves, "scrolls":counter.scrolls}
         q.put(element)
         if(b):
             df=pd.DataFrame([[minute,counter.clicks,counter.pulsations, counter.moves, counter.scrolls]], columns=["date","clicks","pulsations","moves","scrolls"],index=None)

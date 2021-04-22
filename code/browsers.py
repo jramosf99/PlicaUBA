@@ -20,7 +20,7 @@ def browsers(path, q, b):
             p= df.to_dict('records')
             for rec in p:
                 rec["eventType"]= 2
-                rec['date'] = rec['date'].to_pydatetime().strftime('%Y-%m-%d, %H:%M:%S')
+                rec['date'] = int(time.mktime(time.strptime(rec['date'].to_pydatetime().strftime("%Y-%m-%d %H:%M:%S"), "%Y-%m-%d %H:%M:%S")))
                 q.put(rec)
             if b :
                 if not os.path.isfile(outputPath):

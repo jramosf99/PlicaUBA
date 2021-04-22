@@ -12,11 +12,11 @@ def getActualusers():
     for user in psutil.users():
         repetido = False
         name = user.name
-        time = datetime.fromtimestamp(user.started).strftime("%Y-%m-%d %H:%M:%S")
+        date = datetime.fromtimestamp(user.started).strftime("%Y-%m-%d %H:%M:%S")
         terminal = user.terminal
         host = user.host
         pid = user.pid
-        actualusers.append({'name': str(name), 'time': str(time), 'terminal': str(terminal), 'host': str(host), 'pid': int(pid), 'close': "active"})
+        actualusers.append({'name': str(name), 'time': int(time.mktime(time.strptime(date, "%Y-%m-%d %H:%M:%S"))), 'terminal': str(terminal), 'host': str(host), 'pid': int(pid), 'close': "active"})
     return actualusers
 
 def users(path, q, b):
@@ -36,7 +36,7 @@ def users(path, q, b):
         terminados =  set(previusUsers['pid']) -set(actuales['pid'])
         if len(terminados) > 0:
             changes = True
-            users[users.pid.isin(terminados)] = users[users.pid.isin(terminados)].assign(close=datetime.now().strftime('%Y-%m-%d, %H:%M:%S'))
+            users[users.pid.isin(terminados)] = users[users.pid.isin(terminados)].assign(close=int(time.mktime(time.strptime(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))))
             p = users[users.pid.isin(terminados)].to_dict('records')
             for rec in p:
                 rec["eventType"]= 7

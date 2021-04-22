@@ -71,14 +71,15 @@ def process(path, q, b):
     procesos_viejos = get_processes_info()
 
     while True:
-        time.sleep(1)
+        time.sleep(10)
         procesos = get_processes_info()
         n_terminados = set(procesos_viejos['pid']) - set(procesos['pid'])
         if len(n_terminados)>0:
             procesos_terminados = procesos_viejos[procesos_viejos.pid.isin(n_terminados)]
-            procesos_terminados = procesos_terminados.assign(FinishTime=datetime.now().strftime('%Y-%m-%d, %H:%M:%S'))
+            procesos_terminados = procesos_terminados.assign(FinishTime=int(time.mktime(time.strptime(datetime.now().strftime("%Y-%m-%d %H:%M:%S"), "%Y-%m-%d %H:%M:%S"))))
             p= procesos_terminados.to_dict('records')
             for rec in p:
+                rec["create_time"]= int(time.mktime(time.strptime(rec["create_time"], "%Y-%m-%d %H:%M:%S")))
                 rec["eventType"]= 5
                 rec["childrens"] = len(rec["childrens"])
                 q.put(rec)

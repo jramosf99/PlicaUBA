@@ -1,5 +1,6 @@
 import inotify.adapters
 import pandas as pd
+import time
 from datetime import datetime
 import os
 
@@ -25,7 +26,10 @@ def files(path1,path2, q, b):
         for event in i.event_gen(yield_nones=False):
             (_, type_names, path, filename) = event    
             if any(elem in list  for elem in type_names):
-                event = {"eventType": 3, "date":datetime.now().strftime('%Y-%m-%d, %H:%M:%S'),"path": os.path.join(path, filename), "type": type_names}
+                date_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                pattern = "%Y-%m-%d %H:%M:%S"
+                date = int(time.mktime(time.strptime(date_time, pattern)))
+                event = {"eventType": 3, "date":date, "path": os.path.join(path, filename), "type": type_names}
                 q.put(event)
                 if b:
                     fileEvent = [os.path.join(path, filename), type_names, datetime.now()]

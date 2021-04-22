@@ -34,7 +34,10 @@ def network(path, q,b):
         interface = get_interfaces_info()
         for element in interface:
             element["eventType"]= 4
-            element["date"]= datetime.now().strftime('%Y-%m-%d, %H:%M:%S')
+            date_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            pattern = "%Y-%m-%d %H:%M:%S"
+            date = int(time.mktime(time.strptime(date_time, pattern)))
+            element["date"]= date
             q.put(element)
         if b:
             df = pd.DataFrame(interface)
