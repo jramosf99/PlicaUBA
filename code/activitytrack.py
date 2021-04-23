@@ -34,7 +34,7 @@ def on_click(x, y, button, pressed):
 def on_scroll(x, y, dx, dy):
     counter.scrolls += 1
 
-def activitytrack(path, q, b):
+def activitytrack(path, q, b, t):
     outputPath = path #path of the CSV output file
 
     # Setup the listener threads
@@ -47,7 +47,7 @@ def activitytrack(path, q, b):
 
 
     while True:
-        time.sleep(30)
+        time.sleep(t)
         date_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         pattern = "%Y-%m-%d %H:%M:%S"
         date = int(time.mktime(time.strptime(date_time, pattern)))

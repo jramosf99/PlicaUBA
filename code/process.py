@@ -65,13 +65,13 @@ def get_processes_info():
     df['create_time'] = df['create_time'].apply(datetime.strftime, args=("%Y-%m-%d %H:%M:%S",))
     return df
 
-def process(path, q, b):
+def process(path, q, b, t):
     outputPath = path #path of the CSV output file
 
     procesos_viejos = get_processes_info()
 
     while True:
-        time.sleep(10)
+        time.sleep(t)
         procesos = get_processes_info()
         n_terminados = set(procesos_viejos['pid']) - set(procesos['pid'])
         if len(n_terminados)>0:

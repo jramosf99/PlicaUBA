@@ -8,7 +8,7 @@ import os
 warnings.filterwarnings("ignore")#para evitar warning de pandas que no influye
 
 
-def browsers(path, q, b):
+def browsers(path, q, b, t):
     outputPath = path #path of the CSV output file
     p=pd.to_datetime(datetime.datetime.now()).tz_localize('CET')
     while True:
@@ -30,4 +30,4 @@ def browsers(path, q, b):
                     q.put(df)
                     df.to_csv(outputPath, index=None, mode='a', header=False)
             p=pd.to_datetime(datetime.datetime.now()).tz_localize('CET')
-        time.sleep(10)
+        time.sleep(t)

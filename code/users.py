@@ -19,7 +19,7 @@ def getActualusers():
         actualusers.append({'name': str(name), 'time': int(time.mktime(time.strptime(date, "%Y-%m-%d %H:%M:%S"))), 'terminal': str(terminal), 'host': str(host), 'pid': int(pid), 'close': "active"})
     return actualusers
 
-def users(path, q, b):
+def users(path, q, b, t):
 
     outputPath = path
 
@@ -56,4 +56,4 @@ def users(path, q, b):
             users.to_csv(outputPath, index=None)
         previusUsers = actuales
         changes = False
-        time.sleep(100)
+        time.sleep(t)

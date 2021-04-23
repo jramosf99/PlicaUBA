@@ -18,12 +18,12 @@ def get_sockets_info():
         if pid == None:
             pid = 0
         sockets.append({
-            'fd': fd, 'family': family, 'type': type,
+            'fd': fd,'type': type,
             'laddr':laddr, 'raddr':raddr,'pid':pid, 'detection_time': int(time.mktime(time.strptime(datetime.now().strftime("%Y-%m-%d %H:%M:%S"), "%Y-%m-%d %H:%M:%S"))), 'closed_time': "open"})
     return sockets
 
 
-def sockets(path, q, b):
+def sockets(path, q, b, t):
 
     outputPath = path #path of the CSV output file
 
@@ -61,4 +61,4 @@ def sockets(path, q, b):
             nuevos = set()
         previusSockets = actuales
         changes = False
-        time.sleep(2)
+        time.sleep(t)

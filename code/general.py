@@ -29,13 +29,13 @@ outputpathJSON="./json.json"
 jsons = [outputpathJSON,pathActivityTrackJSON,pathBrowsersJSON,pathFilesJSON,pathNetworksJSON,pathProcessJSON,pathSocketsJSON,pathUsersJSON]
 
 q = queue.Queue()
-threading.Thread(target=activitytrack, args=(pathActivityTrackCSV,q,False)).start()
-threading.Thread(target=browsers, args=(pathBrowsersCSV,q,False)).start()
+threading.Thread(target=activitytrack, args=(pathActivityTrackCSV,q,False, 60)).start()
+threading.Thread(target=browsers, args=(pathBrowsersCSV,q,False, 120)).start()
 threading.Thread(target=files, args=(pathFilesCSV,pathFilesToWatch,q,False)).start()
-threading.Thread(target=network, args=(pathNetworksCSV,q,False)).start()
-threading.Thread(target=process, args=(pathProcessCSV,q, False), daemon=True).start()
-threading.Thread(target=sockets, args=(pathSocketsCSV,q,False)).start()
-threading.Thread(target=users, args=(pathUsersCSV,q,False)).start()
+threading.Thread(target=network, args=(pathNetworksCSV,q,False,120)).start()
+threading.Thread(target=process, args=(pathProcessCSV,q, False, 10), daemon=True).start()
+threading.Thread(target=sockets, args=(pathSocketsCSV,q,False, 10)).start()
+threading.Thread(target=users, args=(pathUsersCSV,q,False, 120)).start()
 
 def write_json(data, filename):
     with open(filename,'w') as f:
@@ -43,6 +43,9 @@ def write_json(data, filename):
 
 while True:
     element= q.get()
+    head, tail = os.path.split(jsons[element["eventType"]])
+    if not os.path.isdir(head):
+        os.mkdir(head)
     if not os.path.isfile(jsons[element["eventType"]]):
         data = {}
         data['events'] = []
