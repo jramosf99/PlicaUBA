@@ -4,9 +4,14 @@ from browser_history import get_history
 import time
 import warnings
 import os
-
+import logging.config
+logging.config.dictConfig({
+    'version': 1,
+    'disable_existing_loggers': True,
+})
 warnings.filterwarnings("ignore")#para evitar warning de pandas que no influye
 
+logging.getLogger("browser_history").setLevel(logging.WARNING)
 
 def browsers(path, q, b, t):
     outputPath = path #path of the CSV output file

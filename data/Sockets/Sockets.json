@@ -1,0 +1,16 @@
+{
+    "events": [
+        {
+            "fd": 44,
+            "type": 1,
+            "laddr": "192.168.1.44",
+            "raddr": "92.123.57.110",
+            "pid": 3918,
+            "detection_time": 1619615467,
+            "closed_time": 1619615467,
+            "eventType": 6,
+            "laddrport": 51408,
+            "raddrport": 443
+        }
+    ]
+}
