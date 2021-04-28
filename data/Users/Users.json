@@ -1,0 +1,13 @@
+{
+    "events": [
+        {
+            "name": "jramo",
+            "time": 1619594912,
+            "terminal": "None",
+            "host": "None",
+            "pid": 0,
+            "close": "active",
+            "eventType": 7
+        }
+    ]
+}

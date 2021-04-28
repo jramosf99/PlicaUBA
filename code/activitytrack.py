@@ -34,7 +34,7 @@ def on_click(x, y, button, pressed):
 def on_scroll(x, y, dx, dy):
     counter.scrolls += 1
 
-def activitytrack(path):
+def activitytrack(path, q, b, t):
     outputPath = path #path of the CSV output file
 
     # Setup the listener threads
@@ -47,11 +47,16 @@ def activitytrack(path):
 
 
     while True:
-        minute = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        time.sleep(2)
-        df=pd.DataFrame([[minute,counter.clicks,counter.pulsations, counter.moves, counter.scrolls]], columns=["date","clicks","pulsations","moves","scrolls"],index=None)
-        if not os.path.isfile(outputPath):
-            df.to_csv(outputPath, index=None, header=True)
-        else:
-            df.to_csv(outputPath, index=None, mode='a', header=False)
+        time.sleep(t)
+        date_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        pattern = "%Y-%m-%d %H:%M:%S"
+        date = int(time.mktime(time.strptime(date_time, pattern)))
+        element = {"eventType": 1, "time":date, "clicks":counter.clicks, "pulsations":counter.pulsations, "moves":counter.moves, "scrolls":counter.scrolls}
+        q.put(element)
+        if(b):
+            df=pd.DataFrame([[minute,counter.clicks,counter.pulsations, counter.moves, counter.scrolls]], columns=["date","clicks","pulsations","moves","scrolls"],index=None)
+            if not os.path.isfile(outputPath):
+                df.to_csv(outputPath, index=None, header=True)
+            else:
+                df.to_csv(outputPath, index=None, mode='a', header=False)
         Counter.reset(counter)
