@@ -26,10 +26,22 @@ def files(path1,path2, q, b):
         for event in i.event_gen(yield_nones=False):
             (_, type_names, path, filename) = event    
             if any(elem in list  for elem in type_names):
+                if type_names[0] == 'IN_MOVED_TO':
+                    eventType = "moved"
+                elif type_names[0] == 'IN_DELETE':
+                    eventype = "deleted"
+                elif type_names[0] == 'IN_CREATE':
+                    eventype = "created"
+                elif type_names[0] == 'IN_MODIFY':
+                    eventype = "modified"
+                elif type_names[0] == 'IN_CLOSE_WRITE':
+                    eventype = "modified"
+                else:
+                    eventype = "moved"
                 date_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 pattern = "%Y-%m-%d %H:%M:%S"
                 date = int(time.mktime(time.strptime(date_time, pattern)))
-                event = {"eventType": 3, "date":date, "path": os.path.join(path, filename), "type": type_names[0]}
+                event = {"eventType": 3, "date":date, "path": os.path.join(path, filename), "type": eventype}
                 q.put(event)
                 if b:
                     fileEvent = [os.path.join(path, filename), type_names, datetime.now()]
