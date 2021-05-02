@@ -9,40 +9,77 @@ from multiprocessing import Process
 import threading, queue
 import json
 import os
-pathProcessCSV = "/home/ramos/Escritorio/TFG/TFG/data/process.csv" #output
-pathActivityTrackCSV = "/home/ramos/Escritorio/TFG/TFG/data/activitytrack.csv" #output
-pathFilesCSV = "/home/ramos/Escritorio/TFG/TFG/data/files.csv" #output
-pathFilesToWatch = '/home/ramos/Escritorio/tocar/activitywatch-master' #folder to be watched 
-pathBrowsersCSV = "/home/ramos/Escritorio/TFG/TFG/data/Browsers.csv"
-pathNetworksCSV = "/home/ramos/Escritorio/TFG/TFG/data/Network.csv"
-pathSocketsCSV="/home/ramos/Escritorio/TFG/TFG/data/Sockets.csv"
-pathUsersCSV="/home/ramos/Escritorio/TFG/TFG/data/Users.csv"
-outputpathJSON="./json.json"
-pathProcessJSON = "/home/ramos/Escritorio/TFG/TFG/data/process/process.json" #output
-pathActivityTrackJSON = "/home/ramos/Escritorio/TFG/TFG/data/activitytrack/activitytrack.json" #output
-pathFilesJSON = "/home/ramos/Escritorio/TFG/TFG/data/files/files.json" #output
-pathBrowsersJSON = "/home/ramos/Escritorio/TFG/TFG/data/Browsers/Browsers.json"
-pathNetworksJSON = "/home/ramos/Escritorio/TFG/TFG/data/Network/Network.json"
-pathSocketsJSON="/home/ramos/Escritorio/TFG/TFG/data/Sockets/Sockets.json"
-pathUsersJSON="/home/ramos/Escritorio/TFG/TFG/data/Users/Users.json"
-outputpathJSON="./json.json"
-jsons = [outputpathJSON,pathActivityTrackJSON,pathBrowsersJSON,pathFilesJSON,pathNetworksJSON,pathProcessJSON,pathSocketsJSON,pathUsersJSON]
+import sys
+import configparser
 
-q = queue.Queue()
-threading.Thread(target=activitytrack, args=(pathActivityTrackCSV,q,False, 60)).start()
-threading.Thread(target=browsers, args=(pathBrowsersCSV,q,False, 120)).start()
-threading.Thread(target=files, args=(pathFilesCSV,pathFilesToWatch,q,False)).start()
-threading.Thread(target=network, args=(pathNetworksCSV,q,False,120)).start()
-threading.Thread(target=process, args=(pathProcessCSV,q, False, 10), daemon=True).start()
-threading.Thread(target=sockets, args=(pathSocketsCSV,q,False, 10)).start()
-threading.Thread(target=users, args=(pathUsersCSV,q,False, 120)).start()
 
 def write_json(data, filename):
     with open(filename,'w') as f:
         json.dump(data, f, indent=4)
 
+def read_config(param):
+    config = configparser.ConfigParser()
+    config.read(param)
+    print(">> Configuracion: {}".format(param))
+    conf = {}
+    
+    conf["pathFilesToWatch"] = config["watch_path"].get("pathFilesToWatch")
+
+    conf["outputpathJSON"] = config["jsons_paths"].get("outputpathJSON").encode("utf-8")
+    conf["pathProcessJSON"] = config["jsons_paths"].get("pathProcessJSON").encode("utf-8")
+    conf["pathActivityTrackJSON"] = config["jsons_paths"].get("pathActivityTrackJSON").encode("utf-8")
+    conf["pathFilesJSON"] = config["jsons_paths"].get("pathFilesJSON").encode("utf-8")
+    conf["pathBrowsersJSON"] = config["jsons_paths"].get("pathBrowsersJSON").encode("utf-8")
+    conf["pathNetworksJSON"] = config["jsons_paths"].get("pathNetworksJSON").encode("utf-8")
+    conf["pathSocketsJSON"] = config["jsons_paths"].get("pathSocketsJSON").encode("utf-8")
+    conf["pathUsersJSON"] = config["jsons_paths"].get("pathUsersJSON").encode("utf-8")
+
+    conf["activityTrackTime"] = config["times"].getint("activityTrackTime")
+    conf["browserTime"] = config["times"].getint("browserTime")
+    conf["NetworkTime"] = config["times"].getint("NetworkTime")
+    conf["ProcessTime"] = config["times"].getint("ProcessTime")
+    conf["SocketsTime"] = config["times"].getint("SocketsTime")
+    conf["UsersTime"] = config["times"].getint("UsersTime")
+
+    conf["activitytrackBoolean"] = config["booleans"].getboolean("activitytrackBoolean")
+    conf["browsersBoolean"] = config["booleans"].getboolean("browsersBoolean")
+    conf["filesBoolean"] = config["booleans"].getboolean("filesBoolean")
+    conf["networkBoolean"] = config["booleans"].getboolean("networkBoolean")
+    conf["processBoolean"] = config["booleans"].getboolean("processBoolean")
+    conf["socketsBoolean"] = config["booleans"].getboolean("socketsBoolean")
+    conf["usersBoolean"] = config["booleans"].getboolean("usersBoolean")
+
+    conf["pathProcessCSV"] = config["csvs_paths"].get("pathProcessCSV")
+    conf["pathActivityTrackCSV"] = config["csvs_paths"].get("pathActivityTrackCSV")
+    conf["pathFilesCSV"] = config["csvs_paths"].get("pathFilesCSV")
+    conf["pathBrowsersCSV"] = config["csvs_paths"].get("pathBrowsersCSV")
+    conf["pathNetworksCSV"] = config["csvs_paths"].get("pathNetworksCSV")
+    conf["pathSocketsCSV"] = config["csvs_paths"].get("pathSocketsCSV")
+    conf["pathUsersCSV"] = config["csvs_paths"].get("pathUsersCSV")
+    return conf
+
+
+
+conf = read_config(sys.argv[1])
+
+jsons = [conf["outputpathJSON"],conf["pathActivityTrackJSON"],conf["pathBrowsersJSON"],conf["pathFilesJSON"],conf["pathNetworksJSON"],conf["pathProcessJSON"],conf["pathSocketsJSON"],conf["pathUsersJSON"]]
+q = queue.Queue()
+threading.Thread(target=activitytrack, args=(conf["pathActivityTrackCSV"],q,conf["activitytrackBoolean"], conf["activityTrackTime"])).start()
+threading.Thread(target=browsers, args=(conf["pathBrowsersCSV"],q,conf["browsersBoolean"], conf["browserTime"])).start()
+threading.Thread(target=files, args=(conf["pathFilesCSV"],conf["pathFilesToWatch"],q,conf["filesBoolean"])).start()
+threading.Thread(target=network, args=(conf["pathNetworksCSV"],q,conf["networkBoolean"],conf["NetworkTime"])).start()
+threading.Thread(target=process, args=(conf["pathProcessCSV"],q, conf["processBoolean"], conf["ProcessTime"])).start()
+threading.Thread(target=sockets, args=(conf["pathSocketsCSV"],q,conf["socketsBoolean"], conf["SocketsTime"])).start()
+threading.Thread(target=users, args=(conf["pathUsersCSV"],q,conf["usersBoolean"], conf["UsersTime"])).start()
+
+
+
+
+
+
 while True:
     element= q.get()
+    print(element)
     head, tail = os.path.split(jsons[element["eventType"]])
     if not os.path.isdir(head):
         os.mkdir(head)

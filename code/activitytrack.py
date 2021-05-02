@@ -35,8 +35,9 @@ def on_scroll(x, y, dx, dy):
     counter.scrolls += 1
 
 def activitytrack(path, q, b, t):
+    
     outputPath = path #path of the CSV output file
-
+    print(outputPath)
     # Setup the listener threads
     keyboard_listener = KeyboardListener(on_press=on_press, on_release=None)
     mouse_listener = MouseListener(on_move=on_move, on_click=on_click, on_scroll=on_scroll)
@@ -54,7 +55,7 @@ def activitytrack(path, q, b, t):
         element = {"eventType": 1, "time":date, "clicks":counter.clicks, "pulsations":counter.pulsations, "moves":counter.moves, "scrolls":counter.scrolls}
         q.put(element)
         if(b):
-            df=pd.DataFrame([[minute,counter.clicks,counter.pulsations, counter.moves, counter.scrolls]], columns=["date","clicks","pulsations","moves","scrolls"],index=None)
+            df=pd.DataFrame([[datetime.now().strftime("%Y-%m-%d %H:%M:%S"),counter.clicks,counter.pulsations, counter.moves, counter.scrolls]], columns=["date","clicks","pulsations","moves","scrolls"],index=None)
             if not os.path.isfile(outputPath):
                 df.to_csv(outputPath, index=None, header=True)
             else:

@@ -29,10 +29,8 @@ def browsers(path, q, b, t):
                 q.put(rec)
             if b :
                 if not os.path.isfile(outputPath):
-                    q.put(df)
                     df.to_csv(outputPath, index=None)
                 else:
-                    q.put(df)
                     df.to_csv(outputPath, index=None, mode='a', header=False)
             p=pd.to_datetime(datetime.datetime.now()).tz_localize('CET')
         time.sleep(t)
