@@ -18,10 +18,10 @@ kafka_id=$(docker ps -q --filter "ancestor=wurstmeister/kafka:0.11.0.1")
 zookeeper_id=$(docker ps -q --filter "expose=2181")
 zookeeper_ip=$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $zookeeper_id)
 
-declare -a topics=("WF-DATA" "BT-DATA" "CS-DATA" "RF-DATA" "RM-DATA" "TI-DATA" "PF-DATA" "UBA-DATA")
+# declare -a topics = ('UBA-DATA-MOD1' 'UBA-DATA-MOD2' 'UBA-DATA-MOD3' 'UBA-DATA-MOD4' 'UBA-DATA-MOD5' 'UBA-DATA-MOD6' 'UBA-DATA-MOD7')
 
 ## now loop through the above array
-for i in "${topics[@]}"
+for i in 'UBA-DATA-MOD1' 'UBA-DATA-MOD2' 'UBA-DATA-MOD3' 'UBA-DATA-MOD4' 'UBA-DATA-MOD5' 'UBA-DATA-MOD6' 'UBA-DATA-MOD7'
 do
 	# Creacion de topics desde Kafka instalado en local
 	#sudo ./kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic "$i"
@@ -29,4 +29,5 @@ do
 	sudo docker exec -it $kafka_id kafka-topics.sh --create --zookeeper $zookeeper_ip:2181 --replication-factor 1 --partitions 1 --topic "$i"  --config retention.ms=5000
 
 done
+
 

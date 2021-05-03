@@ -37,7 +37,6 @@ def on_scroll(x, y, dx, dy):
 def activitytrack(path, q, b, t):
     
     outputPath = path #path of the CSV output file
-    print(outputPath)
     # Setup the listener threads
     keyboard_listener = KeyboardListener(on_press=on_press, on_release=None)
     mouse_listener = MouseListener(on_move=on_move, on_click=on_click, on_scroll=on_scroll)

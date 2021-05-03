@@ -63,7 +63,9 @@ def read_config(param):
 conf = read_config(sys.argv[1])
 
 jsons = [conf["outputpathJSON"],conf["pathActivityTrackJSON"],conf["pathBrowsersJSON"],conf["pathFilesJSON"],conf["pathNetworksJSON"],conf["pathProcessJSON"],conf["pathSocketsJSON"],conf["pathUsersJSON"]]
+
 q = queue.Queue()
+
 threading.Thread(target=activitytrack, args=(conf["pathActivityTrackCSV"],q,conf["activitytrackBoolean"], conf["activityTrackTime"])).start()
 threading.Thread(target=browsers, args=(conf["pathBrowsersCSV"],q,conf["browsersBoolean"], conf["browserTime"])).start()
 threading.Thread(target=files, args=(conf["pathFilesCSV"],conf["pathFilesToWatch"],q,conf["filesBoolean"])).start()
@@ -79,18 +81,17 @@ threading.Thread(target=users, args=(conf["pathUsersCSV"],q,conf["usersBoolean"]
 
 while True:
     element= q.get()
-    print(element)
     head, tail = os.path.split(jsons[element["eventType"]])
     if not os.path.isdir(head):
         os.mkdir(head)
     if not os.path.isfile(jsons[element["eventType"]]):
         data = {}
-        data['events'] = []
+        data['data'] = []
         with open(jsons[element["eventType"]], 'w') as file:
             json.dump(data, file, indent=4)
     with open(jsons[element["eventType"]]) as json_file:
         data = json.load(json_file)
-        temp = data['events']
+        temp = data['data']
         temp.append(element)     
     write_json(data,jsons[element["eventType"]]) 
 
