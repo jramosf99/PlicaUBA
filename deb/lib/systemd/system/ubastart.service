@@ -1,0 +1,13 @@
+[Unit]
+Description=Start UBA service
+After=multi-user.target
+Conflicts=getty@tty1.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/plica/mgmt/start_all.py
+
+StandardInput=tty-force
+
+[Install]
+WantedBy=multi-user.target

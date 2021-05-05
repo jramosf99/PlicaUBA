@@ -1,2 +1,5 @@
 cd /home/plica/mgmt && pip3 install -r requeriments.txt
 chmod 777 /opt/sensoruba/data/*
+systemctl daemon-reload
+systemctl enable ubastart.service
+systemctl start ubastart.service
