@@ -10,6 +10,7 @@ import threading, queue
 import json
 import os
 import sys
+import time
 import configparser
 
 
@@ -56,6 +57,12 @@ def read_config(param):
     conf["pathNetworksCSV"] = config["csvs_paths"].get("pathNetworksCSV")
     conf["pathSocketsCSV"] = config["csvs_paths"].get("pathSocketsCSV")
     conf["pathUsersCSV"] = config["csvs_paths"].get("pathUsersCSV")
+
+    conf["metadata"] = {}
+    conf["metadata"]["version"] = config["metadata"].get("version")
+    conf["metadata"]["id"] = config["metadata"].get("id")
+    conf["metadata"]["event"] = config["metadata"].get("event")
+    conf["type"] = ["",config["metadata"].get("type1"),config["metadata"].get("type2"),config["metadata"].get("type3"),config["metadata"].get("type4"),config["metadata"].get("type5"),config["metadata"].get("type6"),config["metadata"].get("type7")]
     return conf
 
 
@@ -92,6 +99,11 @@ while True:
     with open(jsons[element["eventType"]]) as json_file:
         data = json.load(json_file)
         temp = data['data']
-        temp.append(element)     
+        message = conf["metadata"]
+        message["type"] = conf["type"][element["eventType"]]
+        message["time"] = int(time.time())
+        message ["data"] = element
+        temp.append(message)
+        print(message)     
     write_json(data,jsons[element["eventType"]]) 
 
