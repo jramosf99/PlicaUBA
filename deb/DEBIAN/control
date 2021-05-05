@@ -1,0 +1,10 @@
+package: pandorafms-agent-unix
+Version: 7.0NG.754-210505
+Architecture: all
+Priority: optional
+Section: admin
+Installed-Size: 260
+Maintainer: ÁRTICA ST <info@artica.es>
+Homepage: http://pandorafms.org/
+Depends: coreutils, perl, unzip
+Description: Pandora FMS agents are based on native languages in every platform: scripts that can be written in any language. It’s possible to reproduce any agent in any programming language and can be extended w
