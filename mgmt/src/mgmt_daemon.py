@@ -83,21 +83,15 @@ def process_file1(file, archive_dir):
 
 	if errors==False:
 		try:
-			destname = format(origin[0].split("/")[-1])
-			shutil.move(origin[0], archive_dir+"/"+destname)
+			destname = format(origin[0].split("\\")[-1])
+			shutil.move(origin[0], archive_dir+"\\"+destname)
 		except shutil.Error:
 			print("No se pudo mover el archivo a {}".format(archive_dir))
 
 	print("Matando watchdog PLICA")
-	os.system("bash /opt/plica/watchdog/src/killwatchdog.sh $")
+
 	print("Lanzando watchdog PLICA")
-	os.system("python3 /opt/plica/watchdog/src/sensor-watchdogUBA1.py /opt/plica/watchdog/src/watchdogconfUBA1.cfg &")
-	os.system("python3 /opt/plica/watchdog/src/sensor-watchdogUBA2.py /opt/plica/watchdog/src/watchdogconfUBA2.cfg &")
-	os.system("python3 /opt/plica/watchdog/src/sensor-watchdogUBA3.py /opt/plica/watchdog/src/watchdogconfUBA3.cfg &")
-	os.system("python3 /opt/plica/watchdog/src/sensor-watchdogUBA4.py /opt/plica/watchdog/src/watchdogconfUBA4.cfg &")
-	os.system("python3 /opt/plica/watchdog/src/sensor-watchdogUBA5.py /opt/plica/watchdog/src/watchdogconfUBA5.cfg &")
-	os.system("python3 /opt/plica/watchdog/src/sensor-watchdogUBA6.py /opt/plica/watchdog/src/watchdogconfUBA6.cfg &")
-	os.system("python3 /opt/plica/watchdog/src/sensor-watchdogUBA7.py /opt/plica/watchdog/src/watchdogconfUBA7.cfg &")
+
 
 
 def process_file2(file, archive_dir):
@@ -110,15 +104,13 @@ def process_file2(file, archive_dir):
 
 	if errors==False:
 		try:
-			destname = format(origin[0].split("/")[-1])
-			shutil.move(origin[0], archive_dir+"/"+destname)
+			destname = format(origin[0].split("\\")[-1])
+			shutil.move(origin[0], archive_dir+"\\"+destname)
 		except shutil.Error:
 			print("No se pudo mover el archivo a {}".format(archive_dir))
 
 	print("Matando UBA")
-	os.system("bash /opt/plica/uba/src/killUBA.sh &")
 	print("Lanzando UBA")
-	os.system("python3 /opt/plica/uba/src/general.py /opt/plica/uba/src/UBA.cfg &")
 
 def process_mgmt_file(initial_snap, conf):
 	"""
@@ -132,7 +124,9 @@ def process_mgmt_file(initial_snap, conf):
 	diff2 = DirectorySnapshotDiff(initial_snap, snapshot2)
 	diff_created1 = diff1.files_created
 	diff_created2 = diff2.files_created
+	# print(diff_created1)
 	if diff_created1:
+		print(diff_created1)
 		print("Detectados nuevos archivos: {}".format(diff_created1))
 	if diff_created2:
 		print("Detectados nuevos archivos: {}".format(diff_created2))
