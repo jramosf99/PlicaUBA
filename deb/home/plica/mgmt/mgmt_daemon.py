@@ -89,15 +89,15 @@ def process_file1(file, archive_dir):
 			print("No se pudo mover el archivo a {}".format(archive_dir))
 
 	print("Matando watchdog PLICA")
-	os.system("bash /opt/plica/watchdog/src/killwatchdog.sh")
+	os.system("bash /opt/plica/watchdog/src/killwatchdog.sh $")
 	print("Lanzando watchdog PLICA")
-	os.system("python /opt/plica/watchdog/src/sensor-watchdogUBA1.py /opt/plica/watchdog/src/watchdogconfUBA1.cfg &")
-	os.system("python /opt/plica/watchdog/src/sensor-watchdogUBA2.py /opt/plica/watchdog/src/watchdogconfUBA2.cfg &")
-	os.system("python /opt/plica/watchdog/src/sensor-watchdogUBA3.py /opt/plica/watchdog/src/watchdogconfUBA3.cfg &")
-	os.system("python /opt/plica/watchdog/src/sensor-watchdogUBA4.py /opt/plica/watchdog/src/watchdogconfUBA4.cfg &")
-	os.system("python /opt/plica/watchdog/src/sensor-watchdogUBA5.py /opt/plica/watchdog/src/watchdogconfUBA5.cfg &")
-	os.system("python /opt/plica/watchdog/src/sensor-watchdogUBA6.py /opt/plica/watchdog/src/watchdogconfUBA6.cfg &")
-	os.system("python /opt/plica/watchdog/src/sensor-watchdogUBA7.py /opt/plica/watchdog/src/watchdogconfUBA7.cfg &")
+	os.system("python3 /opt/plica/watchdog/src/sensor-watchdogUBA1.py /opt/plica/watchdog/src/watchdogconfUBA1.cfg &")
+	os.system("python3 /opt/plica/watchdog/src/sensor-watchdogUBA2.py /opt/plica/watchdog/src/watchdogconfUBA2.cfg &")
+	os.system("python3 /opt/plica/watchdog/src/sensor-watchdogUBA3.py /opt/plica/watchdog/src/watchdogconfUBA3.cfg &")
+	os.system("python3 /opt/plica/watchdog/src/sensor-watchdogUBA4.py /opt/plica/watchdog/src/watchdogconfUBA4.cfg &")
+	os.system("python3 /opt/plica/watchdog/src/sensor-watchdogUBA5.py /opt/plica/watchdog/src/watchdogconfUBA5.cfg &")
+	os.system("python3 /opt/plica/watchdog/src/sensor-watchdogUBA6.py /opt/plica/watchdog/src/watchdogconfUBA6.cfg &")
+	os.system("python3 /opt/plica/watchdog/src/sensor-watchdogUBA7.py /opt/plica/watchdog/src/watchdogconfUBA7.cfg &")
 
 
 def process_file2(file, archive_dir):
@@ -116,9 +116,9 @@ def process_file2(file, archive_dir):
 			print("No se pudo mover el archivo a {}".format(archive_dir))
 
 	print("Matando UBA")
-	os.system("bash /opt/plica/uba/src/killUBA.sh")
+	os.system("bash /opt/plica/uba/src/killUBA.sh &")
 	print("Lanzando UBA")
-	os.system("python /opt/plica/uba/src/general.py /opt/plica/uba/src/UBA.cfg &")
+	os.system("python3 /opt/plica/uba/src/general.py /opt/plica/uba/src/UBA.cfg &")
 
 def process_mgmt_file(initial_snap, conf):
 	"""

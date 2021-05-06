@@ -149,9 +149,7 @@ def kafka_send(kafka_topic, kafka_server, file, archive_dir, debug_dir):
 				if isinstance(data_to_send["data"], list):
 					for data_item in data_to_send["data"]:
 						print(data_item)
-						new_json = data_to_send.copy()
-						new_json["data"] = data_item
-						errors = send_data(new_json, kafka_topic, producer)
+						errors = send_data(data_item, kafka_topic, producer)
 
 	if errors==False:
 		try:

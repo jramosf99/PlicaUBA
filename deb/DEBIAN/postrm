@@ -1,3 +1,5 @@
 rm -r /opt/plica 
 rm -r /opt/sensoruba
 rm -r /home/plica
+systemctl disable ubastart.service
+rm /lib/systemd/system/ubastart.service

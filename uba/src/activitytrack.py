@@ -38,12 +38,12 @@ def activitytrack(path, q, b, t):
     
     outputPath = path #path of the CSV output file
     # Setup the listener threads
-    keyboard_listener = KeyboardListener(on_press=on_press, on_release=None)
-    mouse_listener = MouseListener(on_move=on_move, on_click=on_click, on_scroll=on_scroll)
+    # keyboard_listener = KeyboardListener(on_press=on_press, on_release=None)
+    # mouse_listener = MouseListener(on_move=on_move, on_click=on_click, on_scroll=on_scroll)
 
-    # Start the threads and join them so the script doesn't end early
-    keyboard_listener.start()
-    mouse_listener.start()
+    # # Start the threads and join them so the script doesn't end early
+    # keyboard_listener.start()
+    # mouse_listener.start()
 
 
     while True:

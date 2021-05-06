@@ -104,6 +104,5 @@ while True:
         message["time"] = int(time.time())
         message ["data"] = element
         temp.append(message)
-        print(message)     
     write_json(data,jsons[element["eventType"]]) 
 

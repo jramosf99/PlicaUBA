@@ -7,6 +7,14 @@ PID_watchdog_UBA5=$(if [[ $(ps -ef | grep -v grep | grep sensor-watchdogUBA5 | w
 PID_watchdog_UBA6=$(if [[ $(ps -ef | grep -v grep | grep sensor-watchdogUBA6 | wc -l) > 0 ]]; then ps -A -o pid,cmd|grep sensor-watchdogUBA6 | grep -v grep |head -n 1 | awk '{print $1}'; else echo down; fi)
 PID_watchdog_UBA7=$(if [[ $(ps -ef | grep -v grep | grep sensor-watchdogUBA7 | wc -l) > 0 ]]; then ps -A -o pid,cmd|grep sensor-watchdogUBA7 | grep -v grep |head -n 1 | awk '{print $1}'; else echo down; fi)
 PID_watchdog_UBA=$(if [[ $(ps -ef | grep -v grep | grep general | wc -l) > 0 ]]; then ps -A -o pid,cmd|grep general | grep -v grep |head -n 1 | awk '{print $1}'; else echo down; fi)
+PID_watchdog_MGMT=$(if [[ $(ps -ef | grep -v grep | grep mgmt_daemon | wc -l) > 0 ]]; then ps -A -o pid,cmd|grep mgmt_daemon | grep -v grep |head -n 1 | awk '{print $1}'; else echo down; fi)
+
+if [ "$PID_watchdog_MGMT" == "down" ];
+then
+echo $PID_watchdog_MGMT
+else 
+kill $PID_watchdog_MGMT
+fi
 
 if [ "$PID_watchdog_UBA" == "down" ];
 then
