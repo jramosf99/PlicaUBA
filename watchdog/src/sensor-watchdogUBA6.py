@@ -133,7 +133,7 @@ def kafka_send(kafka_topic, kafka_server, file, archive_dir, debug_dir):
 			errors=True
 			print(" Error de parseo en JSON")
 			data_to_send = ''
-			shutil.move(origin[1],debug_dir)
+			shutil.move(origin[0],debug_dir)
 
 
 		# Archivos de tipo lista de JSON, se envía cada elemento por separado.
@@ -153,8 +153,8 @@ def kafka_send(kafka_topic, kafka_server, file, archive_dir, debug_dir):
 
 	if errors==False:
 		try:
-			destname = "{}-{}".format(str(time.time()), origin[1].split("\\")[-1])
-			shutil.move(origin[1], archive_dir+"\\"+destname)
+			destname = "{}-{}".format(str(time.time()), origin[0].split("\\")[-1])
+			shutil.move(origin[0], archive_dir+"\\"+destname)
 		except shutil.Error:
 			print("No se pudo mover el archivo a {}".format(archive_dir))
 
