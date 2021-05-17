@@ -89,7 +89,7 @@ def process_file1(file, archive_dir):
 			print("No se pudo mover el archivo a {}".format(archive_dir))
 
 	print("Matando watchdog PLICA")
-	os.system("bash /mnt/c/Users/jramo/Desktop/tfg/TFG/mgmt/src/kill_all.sh $")
+	os.system("TASKKILL /F /IM python.exe")
 	print("Lanzando watchdog PLICA")
 	os.system("start /B python C:\\Users\\jramo\\Desktop\\tfg\\TFG\watchdog\\src\\sensor-watchdogUBA1.py C:\\Users\\jramo\\Desktop\\tfg\\TFG\watchdog\\src\\watchdogconfUBA1.cfg")
 	os.system("start /B python C:\\Users\\jramo\\Desktop\\tfg\\TFG\watchdog\\src\\sensor-watchdogUBA2.py C:\\Users\\jramo\\Desktop\\tfg\\TFG\watchdog\\src\\watchdogconfUBA2.cfg")
@@ -116,7 +116,7 @@ def process_file2(file, archive_dir):
 			print("No se pudo mover el archivo a {}".format(archive_dir))
 
 	print("Matando UBA")
-	os.system("bash /mnt/c/Users/jramo/Desktop/tfg/TFG/uba/src/killUBA.sh $")
+	os.system("TASKKILL /F /IM python.exe & python start_all.py")
 	print("Lanzando UBA")
 	os.system("start /B python C:\\Users\\jramo\\Desktop\\tfg\\TFG\\uba\\src\\general.py C:\\Users\\jramo\\Desktop\\tfg\\TFG\\uba\\src\\UBA.cfg")
 
