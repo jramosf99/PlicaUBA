@@ -1,0 +1,7 @@
+[Desktop Entry] 
+Version=1.0 
+Type=Application 
+Terminal=false 
+Exec= python3 /home/plica/mgmt/start_all.py
+Name=Give it a Name 
+

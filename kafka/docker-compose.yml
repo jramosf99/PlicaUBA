@@ -100,7 +100,7 @@ services:
 
 
 networks:
-   PLICA_network:
+  PLICA_network:
       name: PLICA
       driver: bridge
       ipam:
