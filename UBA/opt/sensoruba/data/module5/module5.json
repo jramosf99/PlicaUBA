@@ -1,0 +1,256 @@
+{
+    "data": [
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD5",
+            "time": 1621338536,
+            "data": {
+                "pid": 11940,
+                "name": "dllhost.exe",
+                "create_time": 1621338514,
+                "cores": 4,
+                "cpu_usage": 0.0,
+                "nice": 32,
+                "memory_usage": 1298432.0,
+                "n_threads": 8,
+                "childrens": 0,
+                "username": "DESKTOP-J4EU7FB\\jramo",
+                "FinishTime": 1621338532,
+                "eventType": 5
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD5",
+            "time": 1621338559,
+            "data": {
+                "pid": 10708,
+                "name": "dllhost.exe",
+                "create_time": 1621338542,
+                "cores": 4,
+                "cpu_usage": 0.0,
+                "nice": 32,
+                "memory_usage": 1298432.0,
+                "n_threads": 8,
+                "childrens": 0,
+                "username": "DESKTOP-J4EU7FB\\jramo",
+                "FinishTime": 1621338559,
+                "eventType": 5
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD5",
+            "time": 1621338667,
+            "data": {
+                "pid": 11376,
+                "name": "dllhost.exe",
+                "create_time": 1621338649,
+                "cores": 4,
+                "cpu_usage": 0.0,
+                "nice": 32,
+                "memory_usage": 1294336.0,
+                "n_threads": 8,
+                "childrens": 0,
+                "username": "DESKTOP-J4EU7FB\\jramo",
+                "FinishTime": 1621338667,
+                "eventType": 5
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD5",
+            "time": 1621338720,
+            "data": {
+                "pid": 8576,
+                "name": "WmiPrvSE.exe",
+                "create_time": 1621338626,
+                "cores": 0,
+                "cpu_usage": 0.0,
+                "nice": 0,
+                "memory_usage": 0.0,
+                "n_threads": 5,
+                "childrens": 0,
+                "username": "N/A",
+                "FinishTime": 1621338720,
+                "eventType": 5
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD5",
+            "time": 1621338733,
+            "data": {
+                "pid": 224,
+                "name": "SearchFilterHost.exe",
+                "create_time": 1621338533,
+                "cores": 0,
+                "cpu_usage": 0.0,
+                "nice": 0,
+                "memory_usage": 0.0,
+                "n_threads": 1,
+                "childrens": 0,
+                "username": "N/A",
+                "FinishTime": 1621338733,
+                "eventType": 5
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD5",
+            "time": 1621338734,
+            "data": {
+                "pid": 264,
+                "name": "SearchProtocolHost.exe",
+                "create_time": 1621338533,
+                "cores": 4,
+                "cpu_usage": 0.0,
+                "nice": 64,
+                "memory_usage": 1212416.0,
+                "n_threads": 4,
+                "childrens": 0,
+                "username": "DESKTOP-J4EU7FB\\jramo",
+                "FinishTime": 1621338733,
+                "eventType": 5
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD5",
+            "time": 1621338735,
+            "data": {
+                "pid": 3532,
+                "name": "RuntimeBroker.exe",
+                "create_time": 1621338685,
+                "cores": 4,
+                "cpu_usage": 0.0,
+                "nice": 32,
+                "memory_usage": 4210688.0,
+                "n_threads": 11,
+                "childrens": 0,
+                "username": "DESKTOP-J4EU7FB\\jramo",
+                "FinishTime": 1621338733,
+                "eventType": 5
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD5",
+            "time": 1621339197,
+            "data": {
+                "pid": 1568,
+                "name": "dllhost.exe",
+                "create_time": 1621339179,
+                "cores": 4,
+                "cpu_usage": 0.0,
+                "nice": 32,
+                "memory_usage": 1298432.0,
+                "n_threads": 8,
+                "childrens": 0,
+                "username": "DESKTOP-J4EU7FB\\jramo",
+                "FinishTime": 1621339197,
+                "eventType": 5
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD5",
+            "time": 1621339408,
+            "data": {
+                "pid": 9164,
+                "name": "dllhost.exe",
+                "create_time": 1621339391,
+                "cores": 4,
+                "cpu_usage": 0.0,
+                "nice": 32,
+                "memory_usage": 1290240.0,
+                "n_threads": 8,
+                "childrens": 0,
+                "username": "DESKTOP-J4EU7FB\\jramo",
+                "FinishTime": 1621339408,
+                "eventType": 5
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD5",
+            "time": 1621339439,
+            "data": {
+                "pid": 920,
+                "name": "backgroundTaskHost.exe",
+                "create_time": 1621339361,
+                "cores": 4,
+                "cpu_usage": 0.0,
+                "nice": 32,
+                "memory_usage": 0.0,
+                "n_threads": 11,
+                "childrens": 0,
+                "username": "DESKTOP-J4EU7FB\\jramo",
+                "FinishTime": 1621339434,
+                "eventType": 5
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD5",
+            "time": 1621339460,
+            "data": {
+                "pid": 7340,
+                "name": "RuntimeBroker.exe",
+                "create_time": 1621339361,
+                "cores": 4,
+                "cpu_usage": 0.0,
+                "nice": 32,
+                "memory_usage": 2281472.0,
+                "n_threads": 5,
+                "childrens": 0,
+                "username": "DESKTOP-J4EU7FB\\jramo",
+                "FinishTime": 1621339460,
+                "eventType": 5
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD5",
+            "time": 1621339461,
+            "data": {
+                "pid": 11668,
+                "name": "chrome.exe",
+                "create_time": 1621338338,
+                "cores": 4,
+                "cpu_usage": 0.0,
+                "nice": 64,
+                "memory_usage": 5955584.0,
+                "n_threads": 12,
+                "childrens": 0,
+                "username": "DESKTOP-J4EU7FB\\jramo",
+                "FinishTime": 1621339460,
+                "eventType": 5
+            }
+        }
+    ]
+}

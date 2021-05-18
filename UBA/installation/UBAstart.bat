@@ -1,0 +1,1 @@
+C:\UBA\installation\test\Scripts\activate.bat && python C:\UBA\home\plica\mgmt\start_all.py

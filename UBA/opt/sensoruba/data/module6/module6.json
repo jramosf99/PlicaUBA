@@ -1,0 +1,1372 @@
+{
+    "data": [
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338527,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "192.0.73.2",
+                "pid": 1988,
+                "detection_time": 1621338516,
+                "closed_time": 1621338527,
+                "eventType": 6,
+                "laddrport": 58406,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338528,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "192.0.77.32",
+                "pid": 1988,
+                "detection_time": 1621338516,
+                "closed_time": 1621338527,
+                "eventType": 6,
+                "laddrport": 58404,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338529,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "192.0.78.22",
+                "pid": 1988,
+                "detection_time": 1621338516,
+                "closed_time": 1621338527,
+                "eventType": 6,
+                "laddrport": 58407,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338530,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "192.0.77.32",
+                "pid": 1988,
+                "detection_time": 1621338516,
+                "closed_time": 1621338527,
+                "eventType": 6,
+                "laddrport": 58403,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338531,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "192.0.73.2",
+                "pid": 1988,
+                "detection_time": 1621338516,
+                "closed_time": 1621338527,
+                "eventType": 6,
+                "laddrport": 58405,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338532,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "192.0.78.33",
+                "pid": 1988,
+                "detection_time": 1621338516,
+                "closed_time": 1621338527,
+                "eventType": 6,
+                "laddrport": 58395,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338533,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "192.0.76.3",
+                "pid": 1988,
+                "detection_time": 1621338516,
+                "closed_time": 1621338527,
+                "eventType": 6,
+                "laddrport": 58396,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338534,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "192.0.77.2",
+                "pid": 1988,
+                "detection_time": 1621338516,
+                "closed_time": 1621338527,
+                "eventType": 6,
+                "laddrport": 58397,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338535,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "192.0.77.2",
+                "pid": 1988,
+                "detection_time": 1621338516,
+                "closed_time": 1621338527,
+                "eventType": 6,
+                "laddrport": 58399,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338564,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 1464,
+                "detection_time": 1621338554,
+                "closed_time": 1621338564,
+                "eventType": 6,
+                "laddrport": 58448,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338565,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 8496,
+                "detection_time": 1621338554,
+                "closed_time": 1621338564,
+                "eventType": 6,
+                "laddrport": 58453,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338566,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 5092,
+                "detection_time": 1621338554,
+                "closed_time": 1621338564,
+                "eventType": 6,
+                "laddrport": 58463,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338567,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 1096,
+                "detection_time": 1621338554,
+                "closed_time": 1621338564,
+                "eventType": 6,
+                "laddrport": 58458,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338575,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 5092,
+                "detection_time": 1621338564,
+                "closed_time": 1621338574,
+                "eventType": 6,
+                "laddrport": 58476,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338576,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 1464,
+                "detection_time": 1621338564,
+                "closed_time": 1621338574,
+                "eventType": 6,
+                "laddrport": 58473,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338577,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 8496,
+                "detection_time": 1621338564,
+                "closed_time": 1621338574,
+                "eventType": 6,
+                "laddrport": 58474,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338578,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 1096,
+                "detection_time": 1621338564,
+                "closed_time": 1621338574,
+                "eventType": 6,
+                "laddrport": 58475,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338594,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 5092,
+                "detection_time": 1621338584,
+                "closed_time": 1621338594,
+                "eventType": 6,
+                "laddrport": 58504,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338595,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 1464,
+                "detection_time": 1621338584,
+                "closed_time": 1621338594,
+                "eventType": 6,
+                "laddrport": 58502,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338596,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 1096,
+                "detection_time": 1621338584,
+                "closed_time": 1621338594,
+                "eventType": 6,
+                "laddrport": 58503,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338598,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 8496,
+                "detection_time": 1621338584,
+                "closed_time": 1621338594,
+                "eventType": 6,
+                "laddrport": 58501,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338614,
+            "data": {
+                "fd": -1,
+                "type": 2,
+                "laddr": "0.0.0.0",
+                "raddr": "N/A",
+                "pid": 1988,
+                "detection_time": 1621338594,
+                "closed_time": 1621338614,
+                "eventType": 6,
+                "laddrport": 62600,
+                "raddrport": "N/A"
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338624,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "52.114.75.78",
+                "pid": 0,
+                "detection_time": 1621338544,
+                "closed_time": 1621338624,
+                "eventType": 6,
+                "laddrport": 58409,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338662,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "204.79.197.254",
+                "pid": 10460,
+                "detection_time": 1621338652,
+                "closed_time": 1621338662,
+                "eventType": 6,
+                "laddrport": 58434,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338663,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "13.107.3.254",
+                "pid": 10460,
+                "detection_time": 1621338652,
+                "closed_time": 1621338662,
+                "eventType": 6,
+                "laddrport": 58435,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338664,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "51.138.106.75",
+                "pid": 4776,
+                "detection_time": 1621338652,
+                "closed_time": 1621338662,
+                "eventType": 6,
+                "laddrport": 58411,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338692,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "140.82.113.26",
+                "pid": 1988,
+                "detection_time": 1621338652,
+                "closed_time": 1621338692,
+                "eventType": 6,
+                "laddrport": 58293,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338702,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "142.250.184.3",
+                "pid": 0,
+                "detection_time": 1621338652,
+                "closed_time": 1621338702,
+                "eventType": 6,
+                "laddrport": 58394,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621338722,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "142.250.200.99",
+                "pid": 1988,
+                "detection_time": 1621338652,
+                "closed_time": 1621338722,
+                "eventType": 6,
+                "laddrport": 58408,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339202,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 5300,
+                "detection_time": 1621339192,
+                "closed_time": 1621339202,
+                "eventType": 6,
+                "laddrport": 58616,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339203,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 7656,
+                "detection_time": 1621339192,
+                "closed_time": 1621339202,
+                "eventType": 6,
+                "laddrport": 58622,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339204,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 8848,
+                "detection_time": 1621339192,
+                "closed_time": 1621339202,
+                "eventType": 6,
+                "laddrport": 58610,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339205,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 10160,
+                "detection_time": 1621339192,
+                "closed_time": 1621339202,
+                "eventType": 6,
+                "laddrport": 58617,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339206,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 5316,
+                "detection_time": 1621339192,
+                "closed_time": 1621339202,
+                "eventType": 6,
+                "laddrport": 58611,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339213,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 8848,
+                "detection_time": 1621339202,
+                "closed_time": 1621339212,
+                "eventType": 6,
+                "laddrport": 58633,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339214,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 5300,
+                "detection_time": 1621339202,
+                "closed_time": 1621339212,
+                "eventType": 6,
+                "laddrport": 58634,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339215,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 10160,
+                "detection_time": 1621339202,
+                "closed_time": 1621339212,
+                "eventType": 6,
+                "laddrport": 58636,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339216,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 7656,
+                "detection_time": 1621339202,
+                "closed_time": 1621339212,
+                "eventType": 6,
+                "laddrport": 58637,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339217,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 5316,
+                "detection_time": 1621339202,
+                "closed_time": 1621339212,
+                "eventType": 6,
+                "laddrport": 58635,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339232,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "51.138.106.75",
+                "pid": 0,
+                "detection_time": 1621339182,
+                "closed_time": 1621339232,
+                "eventType": 6,
+                "laddrport": 58583,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339233,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 10160,
+                "detection_time": 1621339222,
+                "closed_time": 1621339232,
+                "eventType": 6,
+                "laddrport": 58671,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339234,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 5316,
+                "detection_time": 1621339222,
+                "closed_time": 1621339232,
+                "eventType": 6,
+                "laddrport": 58668,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339236,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 8848,
+                "detection_time": 1621339222,
+                "closed_time": 1621339232,
+                "eventType": 6,
+                "laddrport": 58670,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339237,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 5300,
+                "detection_time": 1621339222,
+                "closed_time": 1621339232,
+                "eventType": 6,
+                "laddrport": 58669,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339238,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 7656,
+                "detection_time": 1621339222,
+                "closed_time": 1621339232,
+                "eventType": 6,
+                "laddrport": 58672,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339243,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "13.107.42.10",
+                "pid": 10460,
+                "detection_time": 1621339182,
+                "closed_time": 1621339242,
+                "eventType": 6,
+                "laddrport": 58589,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339244,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "40.101.92.194",
+                "pid": 10460,
+                "detection_time": 1621339182,
+                "closed_time": 1621339242,
+                "eventType": 6,
+                "laddrport": 58588,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339245,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "13.107.246.254",
+                "pid": 10460,
+                "detection_time": 1621339182,
+                "closed_time": 1621339242,
+                "eventType": 6,
+                "laddrport": 58590,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339246,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "13.107.42.254",
+                "pid": 10460,
+                "detection_time": 1621339182,
+                "closed_time": 1621339242,
+                "eventType": 6,
+                "laddrport": 58591,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339252,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "204.79.197.222",
+                "pid": 10460,
+                "detection_time": 1621339182,
+                "closed_time": 1621339252,
+                "eventType": 6,
+                "laddrport": 58592,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339253,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "204.79.197.200",
+                "pid": 10460,
+                "detection_time": 1621339182,
+                "closed_time": 1621339252,
+                "eventType": 6,
+                "laddrport": 58587,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339263,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "216.58.215.162",
+                "pid": 0,
+                "detection_time": 1621339182,
+                "closed_time": 1621339262,
+                "eventType": 6,
+                "laddrport": 58581,
+                "raddrport": 443
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339264,
+            "data": {
+                "fd": -1,
+                "type": 2,
+                "laddr": "0.0.0.0",
+                "raddr": "N/A",
+                "pid": 1988,
+                "detection_time": 1621339232,
+                "closed_time": 1621339262,
+                "eventType": 6,
+                "laddrport": 59255,
+                "raddrport": "N/A"
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339265,
+            "data": {
+                "fd": -1,
+                "type": 2,
+                "laddr": "192.168.1.45",
+                "raddr": "N/A",
+                "pid": 5008,
+                "detection_time": 1621339252,
+                "closed_time": 1621339262,
+                "eventType": 6,
+                "laddrport": 59258,
+                "raddrport": "N/A"
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339266,
+            "data": {
+                "fd": -1,
+                "type": 2,
+                "laddr": "192.168.1.42",
+                "raddr": "N/A",
+                "pid": 5008,
+                "detection_time": 1621339252,
+                "closed_time": 1621339262,
+                "eventType": 6,
+                "laddrport": 59257,
+                "raddrport": "N/A"
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339267,
+            "data": {
+                "fd": -1,
+                "type": 2,
+                "laddr": "172.26.48.1",
+                "raddr": "N/A",
+                "pid": 5008,
+                "detection_time": 1621339252,
+                "closed_time": 1621339262,
+                "eventType": 6,
+                "laddrport": 59256,
+                "raddrport": "N/A"
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339433,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 1744,
+                "detection_time": 1621339423,
+                "closed_time": 1621339433,
+                "eventType": 6,
+                "laddrport": 58715,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339435,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 6428,
+                "detection_time": 1621339423,
+                "closed_time": 1621339433,
+                "eventType": 6,
+                "laddrport": 58710,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339436,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 11244,
+                "detection_time": 1621339423,
+                "closed_time": 1621339433,
+                "eventType": 6,
+                "laddrport": 58717,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339437,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 4068,
+                "detection_time": 1621339423,
+                "closed_time": 1621339433,
+                "eventType": 6,
+                "laddrport": 58718,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339438,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 11796,
+                "detection_time": 1621339423,
+                "closed_time": 1621339433,
+                "eventType": 6,
+                "laddrport": 58716,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339454,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 11796,
+                "detection_time": 1621339443,
+                "closed_time": 1621339453,
+                "eventType": 6,
+                "laddrport": 58750,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339455,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 6428,
+                "detection_time": 1621339443,
+                "closed_time": 1621339453,
+                "eventType": 6,
+                "laddrport": 58749,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339456,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 1744,
+                "detection_time": 1621339443,
+                "closed_time": 1621339453,
+                "eventType": 6,
+                "laddrport": 58752,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339457,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 11244,
+                "detection_time": 1621339443,
+                "closed_time": 1621339453,
+                "eventType": 6,
+                "laddrport": 58751,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339458,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 4068,
+                "detection_time": 1621339443,
+                "closed_time": 1621339453,
+                "eventType": 6,
+                "laddrport": 58753,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339463,
+            "data": {
+                "fd": -1,
+                "type": 2,
+                "laddr": "0.0.0.0",
+                "raddr": "N/A",
+                "pid": 1988,
+                "detection_time": 1621339433,
+                "closed_time": 1621339463,
+                "eventType": 6,
+                "laddrport": 55152,
+                "raddrport": "N/A"
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339464,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "127.0.0.1",
+                "raddr": "127.0.0.1",
+                "pid": 4068,
+                "detection_time": 1621339453,
+                "closed_time": 1621339463,
+                "eventType": 6,
+                "laddrport": 58768,
+                "raddrport": 9092
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339625,
+            "data": {
+                "fd": -1,
+                "type": 2,
+                "laddr": "172.26.48.1",
+                "raddr": "N/A",
+                "pid": 5008,
+                "detection_time": 1621339615,
+                "closed_time": 1621339625,
+                "eventType": 6,
+                "laddrport": 63706,
+                "raddrport": "N/A"
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339626,
+            "data": {
+                "fd": -1,
+                "type": 2,
+                "laddr": "192.168.1.42",
+                "raddr": "N/A",
+                "pid": 5008,
+                "detection_time": 1621339615,
+                "closed_time": 1621339625,
+                "eventType": 6,
+                "laddrport": 63707,
+                "raddrport": "N/A"
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339627,
+            "data": {
+                "fd": -1,
+                "type": 2,
+                "laddr": "192.168.1.45",
+                "raddr": "N/A",
+                "pid": 5008,
+                "detection_time": 1621339615,
+                "closed_time": 1621339625,
+                "eventType": 6,
+                "laddrport": 63708,
+                "raddrport": "N/A"
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD6",
+            "time": 1621339628,
+            "data": {
+                "fd": -1,
+                "type": 1,
+                "laddr": "192.168.1.42",
+                "raddr": "142.250.185.4",
+                "pid": 1988,
+                "detection_time": 1621339615,
+                "closed_time": 1621339625,
+                "eventType": 6,
+                "laddrport": 58794,
+                "raddrport": 443
+            }
+        }
+    ]
+}

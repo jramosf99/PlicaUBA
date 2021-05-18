@@ -1,0 +1,139 @@
+{
+    "data": [
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD1",
+            "time": 1621338574,
+            "data": {
+                "eventType": 1,
+                "time": 1621338574,
+                "clicks": 0,
+                "pulsations": 0,
+                "moves": 0,
+                "scrolls": 0
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD1",
+            "time": 1621338604,
+            "data": {
+                "eventType": 1,
+                "time": 1621338604,
+                "clicks": 0,
+                "pulsations": 0,
+                "moves": 0,
+                "scrolls": 0
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD1",
+            "time": 1621338681,
+            "data": {
+                "eventType": 1,
+                "time": 1621338681,
+                "clicks": 0,
+                "pulsations": 0,
+                "moves": 0,
+                "scrolls": 0
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD1",
+            "time": 1621338711,
+            "data": {
+                "eventType": 1,
+                "time": 1621338711,
+                "clicks": 0,
+                "pulsations": 0,
+                "moves": 0,
+                "scrolls": 0
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD1",
+            "time": 1621339212,
+            "data": {
+                "eventType": 1,
+                "time": 1621339212,
+                "clicks": 0,
+                "pulsations": 0,
+                "moves": 0,
+                "scrolls": 0
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD1",
+            "time": 1621339242,
+            "data": {
+                "eventType": 1,
+                "time": 1621339242,
+                "clicks": 0,
+                "pulsations": 0,
+                "moves": 0,
+                "scrolls": 0
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD1",
+            "time": 1621339272,
+            "data": {
+                "eventType": 1,
+                "time": 1621339272,
+                "clicks": 0,
+                "pulsations": 0,
+                "moves": 0,
+                "scrolls": 0
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD1",
+            "time": 1621339423,
+            "data": {
+                "eventType": 1,
+                "time": 1621339423,
+                "clicks": 0,
+                "pulsations": 0,
+                "moves": 0,
+                "scrolls": 0
+            }
+        },
+        {
+            "version": "1.0",
+            "id": "f0c48ba4-387d-11ea-a137-2e728ce88125",
+            "event": "DATA",
+            "type": "UBA-DATA-MOD1",
+            "time": 1621339453,
+            "data": {
+                "eventType": 1,
+                "time": 1621339453,
+                "clicks": 0,
+                "pulsations": 0,
+                "moves": 0,
+                "scrolls": 0
+            }
+        }
+    ]
+}
