@@ -110,8 +110,11 @@ if __name__ == '__main__':
             with open(jsons[element["eventType"]]) as json_file:
                 data = json.load(json_file)
                 temp = data['data']
-                temp.append(element)
-                print(element)     
+                message = conf["metadata"]
+                message["type"] = conf["type"][element["eventType"]]
+                message["time"] = int(time.time())
+                message ["data"] = element
+                temp.append(message)   
             write_json(data,jsons[element["eventType"]]) 
     except KeyboardInterrupt:
         print("programa terminado")
