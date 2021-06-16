@@ -70,4 +70,5 @@ def network(path, q,b, t):
                 df.to_csv(outputPath, index=None, header=True)
             else:
                 df.to_csv(outputPath, index=None, mode='a', header=False)
+        previusinterfaces = interface
         time.sleep(t)

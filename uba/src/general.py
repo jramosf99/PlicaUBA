@@ -1,6 +1,4 @@
 from process import process
-# from pynput.mouse import Listener as MouseListener
-# from pynput.keyboard import Listener as KeyboardListener
 from activitytrack import  activitytrack
 from files import files
 from browsers import browsers
@@ -105,6 +103,7 @@ while True:
         message["type"] = conf["type"][element["eventType"]]
         message["time"] = int(time.time())
         message ["data"] = element
+        print(message)
         temp.append(message)
     write_json(data,jsons[element["eventType"]]) 
 
