@@ -20,10 +20,8 @@ columnsNames = ["path","actions","time"] #columns names of the CSV files
 
 def files(path1,path2, q, b):
     outputPath = path1#path of the CSV output file
-    print(path2)
     while True:
-        i = inotify.adapters.Inotify()
-        i.add_watch(path2)
+        i = inotify.adapters.InotifyTree(path2)
         for event in i.event_gen(yield_nones=False):
             (_, type_names, path, filename) = event    
             if any(elem in list  for elem in type_names):
