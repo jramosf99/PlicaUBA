@@ -16,19 +16,11 @@ _Se debe contar con python3 instalado en el equipo y con la libreria pip_
 
 _Con la ejecución del paquete deb debería valer para tener el proyecto listo para usarse_
 
-_Dí cómo será ese paso_
+_El paquete se instalara mediante le siguiente comando_
 
 ```
-Da un ejemplo
+sudo dpkg --install UBA-PLICA.deb 
 ```
-
-_Y repite_
-
-```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
 
 ## Configuración ⚙️
 
@@ -38,7 +30,16 @@ _Para configurar el sistema se usan los siguientes archivos_
 
 _Este se encuentra en la dirección /opt/plica/uba/src_
 
-```
-Da un ejemplo
-```
+### watchdogX.cfg
+
+_Estos se encuentran en la dirección /opt/plica/watcdog/src/_
+
+Cada uno configura un sistema watchdog distinto. En ellos se configura la información relativa al servidor Kafka y se indica las carpetas a vigilar (estas deben ir acorde a las configuradas en UBA.cfg).
+
+### mgmt_daemon_4_watchdog.cfg
+
+_Este se encuentra en la dirección /home/plica/mgmt_
+
+Se configurará los path de los archivos de configuración, donde se reciben y donde se usan.
+
 
