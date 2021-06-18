@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#This script kill all the sensor process
+
 PID_watchdog_UBA1=$(if [[ $(ps -ef | grep -v grep | grep sensor-watchdogUBA1 | wc -l) > 0 ]]; then ps -A -o pid,cmd|grep sensor-watchdogUBA1 | grep -v grep |head -n 1 | awk '{print $1}'; else echo down; fi)
 PID_watchdog_UBA2=$(if [[ $(ps -ef | grep -v grep | grep sensor-watchdogUBA2 | wc -l) > 0 ]]; then ps -A -o pid,cmd|grep sensor-watchdogUBA2 | grep -v grep |head -n 1 | awk '{print $1}'; else echo down; fi)
 PID_watchdog_UBA3=$(if [[ $(ps -ef | grep -v grep | grep sensor-watchdogUBA3 | wc -l) > 0 ]]; then ps -A -o pid,cmd|grep sensor-watchdogUBA3 | grep -v grep |head -n 1 | awk '{print $1}'; else echo down; fi)

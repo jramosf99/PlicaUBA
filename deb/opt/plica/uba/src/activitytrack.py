@@ -5,6 +5,7 @@ import time
 from datetime import datetime
 import os
 
+#Class to count the actions
 class Counter:
     pulsations = 0
     clicks = 0
@@ -34,16 +35,18 @@ def on_click(x, y, button, pressed):
 def on_scroll(x, y, dx, dy):
     counter.scrolls += 1
 
+
+# exported main method
 def activitytrack(path, q, b, t):
     
     outputPath = path #path of the CSV output file
-    # Setup the listener threads
-    # keyboard_listener = KeyboardListener(on_press=on_press, on_release=None)
-    # mouse_listener = MouseListener(on_move=on_move, on_click=on_click, on_scroll=on_scroll)
+    #Setup the listener threads
+    keyboard_listener = KeyboardListener(on_press=on_press, on_release=None)
+    mouse_listener = MouseListener(on_move=on_move, on_click=on_click, on_scroll=on_scroll)
 
-    # # Start the threads and join them so the script doesn't end early
-    # keyboard_listener.start()
-    # mouse_listener.start()
+    # Start the threads and join them so the script doesn't end early
+    keyboard_listener.start()
+    mouse_listener.start()
 
 
     while True:
@@ -53,10 +56,13 @@ def activitytrack(path, q, b, t):
         date = int(time.mktime(time.strptime(date_time, pattern)))
         element = {"eventType": 1, "time":date, "clicks":counter.clicks, "pulsations":counter.pulsations, "moves":counter.moves, "scrolls":counter.scrolls}
         q.put(element)
+        
+        #Only when CSV option is active
         if(b):
             df=pd.DataFrame([[datetime.now().strftime("%Y-%m-%d %H:%M:%S"),counter.clicks,counter.pulsations, counter.moves, counter.scrolls]], columns=["date","clicks","pulsations","moves","scrolls"],index=None)
             if not os.path.isfile(outputPath):
                 df.to_csv(outputPath, index=None, header=True)
             else:
                 df.to_csv(outputPath, index=None, mode='a', header=False)
+        #Counter object is reset
         Counter.reset(counter)

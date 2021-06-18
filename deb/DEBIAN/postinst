@@ -1,4 +1,3 @@
 cd /home/plica/mgmt && pip3 install -r requeriments.txt
 chmod 777 /opt/sensoruba/data/*
 chmod 777 /tmp/sensor-watchdog
-
