@@ -16,7 +16,7 @@ _Se debe contar con python3 instalado en el equipo y con la libreria pip_
 
 _Con la ejecución del paquete deb debería valer para tener el proyecto listo para usarse_
 
-_El paquete se instalara mediante le siguiente comando_
+_El paquete se instalará mediante le siguiente comando_
 
 ```
 sudo dpkg --install UBA-PLICA.deb 
@@ -41,5 +41,13 @@ Cada uno configura un sistema watchdog distinto. En ellos se configura la inform
 _Este se encuentra en la dirección /home/plica/mgmt_
 
 Se configurará los path de los archivos de configuración, donde se reciben y donde se usan.
+
+## Puesta en marcha
+
+_Se pondrá en marcha con el siguiente comando_
+
+```
+python3 /home/plica/mgmt/start_all.py
+```
 
 
